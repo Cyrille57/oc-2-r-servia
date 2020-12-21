@@ -1,0 +1,94 @@
+/* ********************* */
+/* ****** General ****** */
+/* ********************* */
+
+
+* {
+    /* Retire la marge et le padding par défault */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Définis paramétre du contenu suivant la taille de la maquette pc fourni */
+    max-width: 1340px;
+    margin: 0 auto;
+    border: px solid black;
+}
+section{
+    border: 1px solid cornflowerblue;
+}
+main{
+    border: 1px solid greenyellow;
+}
+article{
+    border: 1px solid rebeccapurple
+}
+
+/* ********************* */
+/* ****** Header ******* */
+/* ********************* */
+
+
+/* Paramètre du header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid red;
+}
+
+img {
+    border: px solid black;
+}
+
+/* Paramètre du menu */
+
+nav {
+    /*container qui vas recevoir ul */
+    width: 50%;
+    display: flex;
+    justify-content: right;
+    border: px solid black;
+}
+
+#menu_navigation{
+    /* paramétrage du container qui vas recevoir li */
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border: px solid orchid;
+}
+
+a {
+    /* enleve sur le soulignement et change la couleur */
+    text-decoration: none;
+    color: #0065FC;
+    border: px solid black;
+}
+
+#menu_navigation li:last-child {
+    /* mettre en gras le dernier élément de li */
+    font-weight: bold;
+}
+
+
+/* ********************* */
+/* ******* Main ******** */
+/* ********************* */
+
+
+
+/* première section */
+input#image-button{
+    background: #ccc url('icon.png') no-repeat top left;
+    padding-left: 16px;
+    height: 16px;
+}
+
+#grille_image_1{
+    background-color: #F2F2F2;
+}
