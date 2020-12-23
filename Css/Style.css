@@ -13,20 +13,10 @@ body {
     /* Définis paramétre du contenu suivant la taille de la maquette pc fourni */
     max-width: 1340px;
     margin: 0 auto;
-    border: px solid black;
+    font-family: "Raleway", "Arial", "Verdana", "sans-serif";
+    border: 2px solid black;
 }
-section{
-    border: 1px solid cornflowerblue;
-}
-main{
-    border: 1px solid greenyellow;
-}
-article{
-    border: 1px solid rebeccapurple
-}
-div{
-    border: 1px solid red
-}
+
 
 /* ********************* */
 /* ****** Header ******* */
@@ -40,7 +30,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
+    border: px solid red;
 }
 
 img {
@@ -92,6 +82,272 @@ input#image-button{
     height: 16px;
 }
 
-#grille_image_1{
+
+/* ******************************* */
+/* ******** Grille image ********* */
+/* ******************************* */
+
+/* Parametre de la boite pour container 1 et 2*/
+#hebergements
+{
+    height: 625px;
+    display: flex;
+    justify-content: ;
+    flex-wrap: nowrap;
+    border:px solid blue;
+}
+
+/* Parametre container1 pour container_grille*/
+.container-1{
+    width: 65.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+/* Parametre container2 pour container_grille 2*/
+.container-2{
+    width: 31.33%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+    border:px solid blue;
+}
+/* Parametre commune a container-1 et -2 */
+.container-1, .container-2{
+    height: auto;
+    border-radius: 35px;
     background-color: #F2F2F2;
+}
+/* Parametre réglage h2 */
+.container-1>h2{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+/* Parametre réglage p */
+.container-1>p{
+    margin-bottom: 47px;
+    margin-left: 40px;
+    border:px solid blue;
+}
+/* Parametre container_grille pour grille_image_1 */
+.container_grille{
+    height: 450px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: px solid black;
+}
+/* Paramétre grille_image_1 pour les cartes*/
+#grille_image_1_premiere_range, #grille_image_1_deuxieme_range{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+/*Parametre de la boite carte */
+.carte{
+    height: 200px;
+    width: 246px;
+    display: flex;
+    justify-content: center;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px #d9d9d9;
+}
+/* Parametre boite image pour integrer l'image */
+.boite_image{
+    height: 114px;
+    width: 236px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 30px 30px 0px 0px;
+}
+/* Parametre de l'image */
+.image{
+    width: 100%;
+    border-radius: 35px 35px 0px 0px;
+}
+/* Parametre du titre */
+.carte h2 {
+    margin-top: 13px;
+    margin-left: 7%;
+    font-size: 16px;
+    color: black;
+}
+/* Parametre du paragraphe */
+.carte p{
+    margin-left: 7%;
+    color: black;
+}
+/* Parametre des icones etoiles */
+.etoile{
+    margin-top: 5px;
+    margin-left: 7%;
+    color: #0065fc;
+}
+/* Parametrage de afficher plus */
+.container-1>p{
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Parametre container-2*/
+.container-2>h2{
+    margin-top: 24px;
+    margin-left: 40px;
+    border: px solid black;
+}
+span{
+    margin-left: 22%;
+}
+.container-2>p{
+    margin-bottom: 47px;
+    margin-left: 40px;
+}
+#container_grille-2{
+    height: 520px;
+    margin-top: 20px;
+    margin-left: 36px;
+    margin-right: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: px solid black;
+}
+#grille_image_2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+/*Parametre de la boite carte-2 */
+.carte-2{
+    height: 143px;
+    width: 343px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px #d9d9d9;
+    border: px solid red;
+}
+.carte-2>a{
+    width: 100%;
+    display: flex;
+}
+/* Parametre boite image pour integrer l'image */
+.boite_image-2{
+    height: 134px;
+    width: 127px;
+    display: flex;
+    justify-content: center;
+    margin-top: 4px;
+    margin-left: 3px;
+    border-radius: 30px 0px 0px 30px;
+    border: px solid black;
+}
+.image-2{
+    width: 100%;
+    border-radius: 35px 0px 0px 35px;
+}
+.boite_texte{
+    width: 180px;
+    border: px solid black;
+}
+/* Parametre du titre */
+.carte-2 h2 {
+    margin-top: 19px;
+    margin-left:21px;
+    font-size: 16px;
+    color: black;
+}
+/* Parametre du paragraphe */
+.carte-2 p{
+    margin-left: 21px;
+    margin-top: 10px;
+    color: black;
+}
+/* Parametre des icones etoiles */
+.etoile-2{
+    margin-top: 25px;
+    margin-left: 21px;
+    color: #0065fc;
+}
+/* Change la couleur des etoiles */
+.couleur{
+    color: #d9d9d9;
+}
+
+/* Section 3 */
+/* Parametre de la boite pour container 1 et 2*/
+#activite
+{
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    border:px solid blue;
+}
+/* Parametre container1 pour container_grille*/
+.container-3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: px solid red;
+}
+
+/* Parametre container_grille pour grille_image_1 */
+.container_grille-3{
+    width: auto;
+    height: 480px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 5px solid black;
+}
+.carte-3{
+    height: 445px;
+    width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px #d9d9d9;
+    border: 3px solid red;
+}
+/* Parametre boite image pour integrer l'image */
+.boite_image-3{
+    height: 390px;
+    width: 300px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: px;
+    border-radius: 30px 30px 0px 0px;
+}
+.image-3{
+    width: 100%;
+    border-radius: 30px 30px 0px 0px;
+}
+.carte-3>a{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: ;
+}
+.carte-3 p{
+    margin-left: 20px;
+    margin-top: 18px;
+}
+.container-4{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: px solid red;
 }
