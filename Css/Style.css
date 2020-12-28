@@ -1,6 +1,6 @@
-/* ********************* */
-/* ****** General ****** */
-/* ********************* */
+/* *************************************** */
+/* *************** General *************** */
+/* *************************************** */
 
 
 * {
@@ -18,135 +18,254 @@ body {
 }
 
 
-/* ********************* */
-/* ****** Header ******* */
-/* ********************* */
+/* *************************************** */
+/* *************** Header **************** */
+/* *************************************** */
 
 
 /* Paramètre du header */
-
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: px solid red;
-}
-
-img {
-    border: px solid black;
 }
 
 /* Paramètre du menu */
-
 nav {
     /*container qui vas recevoir ul */
     width: 50%;
     display: flex;
     justify-content: right;
-    border: px solid black;
 }
 
-#menu_navigation{
+#menu_navigation {
     /* paramétrage du container qui vas recevoir li */
-    width: 80%;
+    width: 69%;
     display: flex;
     justify-content: space-around;
     list-style: none;
-    border: px solid orchid;
 }
 
 a {
     /* enleve sur le soulignement et change la couleur */
     text-decoration: none;
     color: #0065FC;
-    border: px solid black;
+}
+
+.activite {
+    /* change la couleur du mot activite */
+    color: black;
+    margin-left: 8px;
 }
 
 #menu_navigation li:last-child {
     /* mettre en gras le dernier élément de li */
     font-weight: bold;
+    margin-right: 21px;
 }
 
 
-/* ********************* */
-/* ******* Main ******** */
-/* ********************* */
+/* *************************************** */
+/* **************** Main ***************** */
+/* *************************************** */
 
 
-
-/* première section */
-input#image-button{
-    background: #ccc url('icon.png') no-repeat top left;
-    padding-left: 16px;
-    height: 16px;
+/* Espace entre header et main */
+main {
+    margin-top: 20px;
 }
 
+/* *************************************** */
+/* ************* Section 1 *************** */
+/* *************************************** */
 
-/* ******************************* */
-/* ******** Grille image ********* */
-/* ******************************* */
 
-/* Parametre de la boite pour container 1 et 2*/
-#hebergements
-{
-    height: 625px;
+/* Espace entre le titre et paragraphe */
+main>section>article>p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+/* Parametre boite pour la barre de recherche */
+main>section>article>form {
+    margin-top: 18px;
     display: flex;
-    justify-content: ;
-    flex-wrap: nowrap;
-    border:px solid blue;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 30px 0px 0px 30px;
 }
 
-/* Parametre container1 pour container_grille*/
-.container-1{
+/* Parametre de la boite pour l'icone et recherche */
+.boite_recherche {
+    height: 51px;
+    width: 420px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 20px 18px 18px 20px;
+}
+
+/* Parametre de la boite pour l'icone */
+.boite_icone {
+    height: 46px;
+    width: 51px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Parametre de l'input */
+input {
+    height: 46px;
+    width: 234px;
+    border: none;
+    padding-left: 20px;
+}
+
+/* Parametre du placeholder */
+input::placeholder {
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    opacity: 1;
+}
+
+/* Parametre du bouton */
+.rechercher {
+    height: 51px;
+    width: 134px;
+    color: white;
+    font-size: 18px;
+    background-color: #0065fc;
+    border: 1px solid #0065fc;
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Parametre de la boite pour h2 et les boutoon filtres */
+.filtres {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Parametre du h2 filtre */
+.filtres>h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Paramétres des bouttons*/
+.filtres>button {
+    height: 50px;
+    display:flex;
+    align-items: center;
+    margin-left: 24px;
+    border-radius: 35px;
+    border: 3px solid #d9d9d9;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.money, .familial, .romantique, .chien{
+    height: 50px;
+    width: 50px;
+    display:flex;
+    align-items: center;
+    border-radius:50%;
+    background-color: #deebff;
+}
+.money::before, .familial::before, .romantique::before, .chien::before                         {
+    height: 50px;
+    width: 50px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.blue{
+    background-color: #0065fc;
+}
+
+/* parametre de la boite pour info*/
+.info {
+    display: flex;
+    align-items: center;
+}
+
+/* Parametre de l'icone*/
+.info>i {}
+
+/* Parametre de la boite du dernier article*/
+main>section>:last-child {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+/* Parametre du paragraphe de ce dernier article */
+main>section>:last-child>p {
+    margin-left: 10px;
+}
+
+/* *************************************** */
+/* ******* Section 2 hebergements ******** */
+/* *************************************** */
+
+/* Parametre de la boite pour container_rangees et 2*/
+#hebergements {
+    height: 625px;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Parametre .hebergements pour container_rangees*/
+.hebergements {
     width: 65.33%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
-/* Parametre container2 pour container_grille 2*/
-.container-2{
-    width: 31.33%;
-    margin-left: 3%;
-    display: flex;
-    flex-direction: column;
-    border:px solid blue;
-}
-/* Parametre commune a container-1 et -2 */
-.container-1, .container-2{
+
+/* Parametre commune a .hebergements et .populaires*/
+.hebergements,
+.populaires {
     height: auto;
     border-radius: 35px;
     background-color: #F2F2F2;
+
 }
+
 /* Parametre réglage h2 */
-.container-1>h2{
+.hebergements>h2 {
     margin-top: 20px;
     margin-left: 40px;
 }
-/* Parametre réglage p */
-.container-1>p{
-    margin-bottom: 47px;
-    margin-left: 40px;
-    border:px solid blue;
-}
-/* Parametre container_grille pour grille_image_1 */
-.container_grille{
+
+/* Parametre container_rangees pour .grille_image_1_premiere_range et #grille_image_1_deuxieme_range */
+.container_rangees {
     height: 450px;
     margin-left: 40px;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: px solid black;
 }
+
 /* Paramétre grille_image_1 pour les cartes*/
-#grille_image_1_premiere_range, #grille_image_1_deuxieme_range{
+#grille_image_1_premiere_range,
+#grille_image_1_deuxieme_range {
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
+
 /*Parametre de la boite carte */
-.carte{
+.carte {
     height: 200px;
     width: 246px;
     display: flex;
@@ -155,8 +274,9 @@ input#image-button{
     background-color: white;
     box-shadow: 1px 1px 5px 2px #d9d9d9;
 }
+
 /* Parametre boite image pour integrer l'image */
-.boite_image{
+.boite_image {
     height: 114px;
     width: 236px;
     display: flex;
@@ -165,11 +285,14 @@ input#image-button{
     margin-top: 5px;
     border-radius: 30px 30px 0px 0px;
 }
+
 /* Parametre de l'image */
-.image{
+.image {
     width: 100%;
-    border-radius: 35px 35px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
+    object-fit: cover;
 }
+
 /* Parametre du titre */
 .carte h2 {
     margin-top: 13px;
@@ -177,37 +300,54 @@ input#image-button{
     font-size: 16px;
     color: black;
 }
+
 /* Parametre du paragraphe */
-.carte p{
+.carte p {
     margin-left: 7%;
     color: black;
 }
+
 /* Parametre des icones etoiles */
-.etoile{
+.etoile {
     margin-top: 5px;
     margin-left: 7%;
     color: #0065fc;
 }
-/* Parametrage de afficher plus */
-.container-1>p{
+
+/* Parametre réglage p */
+.hebergements>p {
     margin-top: 20px;
+    margin-bottom: 47px;
+    margin-left: 40px;
     font-weight: bold;
 }
 
-/* Parametre container-2*/
-.container-2>h2{
+
+/* *************************************** */
+/* ******** Section 2 populaires ********* */
+/* *************************************** */
+
+/* Parametre .populaires pour container_colonne*/
+.populaires {
+    width: 31.33%;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Parametre .populaires titre*/
+.populaires>h2 {
     margin-top: 24px;
     margin-left: 40px;
-    border: px solid black;
 }
-span{
+
+/* Parametre de l'icone */
+span {
     margin-left: 22%;
 }
-.container-2>p{
-    margin-bottom: 47px;
-    margin-left: 40px;
-}
-#container_grille-2{
+
+/* parametre du container_colonne */
+#container_colonne {
     height: 520px;
     margin-top: 20px;
     margin-left: 36px;
@@ -215,17 +355,18 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: px solid black;
 }
-#grille_image_2{
+
+#grille_image_2 {
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     flex-wrap: nowrap;
 }
+
 /*Parametre de la boite carte-2 */
-.carte-2{
+.carte-2 {
     height: 143px;
     width: 343px;
     display: flex;
@@ -233,14 +374,15 @@ span{
     border-radius: 35px;
     background-color: white;
     box-shadow: 1px 1px 5px 2px #d9d9d9;
-    border: px solid red;
 }
-.carte-2>a{
+
+.carte-2>a {
     width: 100%;
     display: flex;
 }
+
 /* Parametre boite image pour integrer l'image */
-.boite_image-2{
+.boite_image-2 {
     height: 134px;
     width: 127px;
     display: flex;
@@ -248,106 +390,225 @@ span{
     margin-top: 4px;
     margin-left: 3px;
     border-radius: 30px 0px 0px 30px;
-    border: px solid black;
 }
-.image-2{
+
+.image-2 {
     width: 100%;
-    border-radius: 35px 0px 0px 35px;
+    border-radius: 30px 0px 0px 30px;
+    object-fit: cover;
 }
-.boite_texte{
+
+.boite_texte {
     width: 180px;
-    border: px solid black;
 }
+
 /* Parametre du titre */
 .carte-2 h2 {
     margin-top: 19px;
-    margin-left:21px;
+    margin-left: 21px;
     font-size: 16px;
     color: black;
 }
+
 /* Parametre du paragraphe */
-.carte-2 p{
+.carte-2 p {
     margin-left: 21px;
     margin-top: 10px;
     color: black;
 }
+
 /* Parametre des icones etoiles */
-.etoile-2{
+.etoile-2 {
     margin-top: 25px;
     margin-left: 21px;
     color: #0065fc;
 }
+
 /* Change la couleur des etoiles */
-.couleur{
+.couleur {
     color: #d9d9d9;
 }
 
-/* Section 3 */
-/* Parametre de la boite pour container 1 et 2*/
-#activite
-{
-    height: 550px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    border:px solid blue;
-}
-/* Parametre container1 pour container_grille*/
-.container-3{
+/* *************************************** */
+/* ********* Section 3 activite ********** */
+/* *************************************** */
+
+/* Parametre de la boite pour container-3 */
+#activite {
     width: 100%;
+    height: 510px;
+    margin-top: 65px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border: px solid red;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-/* Parametre container_grille pour grille_image_1 */
-.container_grille-3{
-    width: auto;
+/* Parametre container-3 pour boite_carte*/
+.container-3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Parametre boite_carte pour carte-3 */
+.boite_carte {
+    width: 320px;
     height: 480px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 5px solid black;
 }
-.carte-3{
+
+.carte-3 {
     height: 445px;
-    width: 300px;
+    width: 302px;
     display: flex;
     flex-wrap: nowrap;
     border-radius: 30px;
     background-color: white;
     box-shadow: 1px 1px 5px 2px #d9d9d9;
-    border: 3px solid red;
 }
+
 /* Parametre boite image pour integrer l'image */
-.boite_image-3{
+.boite_image-3 {
     height: 390px;
-    width: 300px;
+    width: 302px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-    margin-top: px;
     border-radius: 30px 30px 0px 0px;
 }
-.image-3{
-    width: 100%;
-    border-radius: 30px 30px 0px 0px;
-}
-.carte-3>a{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: ;
-}
-.carte-3 p{
+
+.carte-3 p {
     margin-left: 20px;
     margin-top: 18px;
+    color: #000000;
+    font-weight: bold;
 }
-.container-4{
-    width: 100%;
+
+/* Parametre boite_carte pour carte-4 */
+.boite_carte-2 {
+    width: 320px;
+    height: 480px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border: px solid red;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Parametre des cartes */
+.carte-4,
+.carte-4a,
+.carte-4b,
+.carte-4c,
+.carte-4d {
+    width: 302px;
+    display: flex;
+    justify-content: center;
+    border-radius: 35px;
+    background-color: white;
+    box-shadow: 1px 1px 5px 2px #d9d9d9;
+}
+
+.carte-4 {
+    height: 195px;
+}
+
+.carte-4a {
+    height: 237px;
+    margin-top: 17px;
+}
+
+.carte-4b {
+    height: 164px;
+    margin-bottom: 17px;
+}
+
+.carte-4c {
+    height: 195px;
+    margin-top: 17px;
+    margin-left: 14px;
+}
+
+.carte-4d {
+    height: 209px;
+    margin-bottom: 17px;
+    margin-left: 14px;
+}
+
+/* Parametre boite image pour integrer l'image */
+.boite_image-4a,
+.boite_image-4b,
+.boite_image-4c,
+.boite_image-4d {
+    width: 302px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.boite_image-4a {
+    height: 180px;
+}
+
+.boite_image-4b {
+    height: 109px;
+}
+
+.boite_image-4c {
+    height: 139px;
+}
+
+.boite_image-4d {
+    height: 153px;
+}
+
+/* Parametre du texte */
+.carte-4a p,
+.carte-4b p,
+.carte-4c p,
+.carte-4d p {
+    margin-left: 20px;
+    margin-top: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+/* *************************************** */
+/* *************** Footer **************** */
+/* *************************************** */
+
+/* Parametrage du Footer */
+footer {
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f2f2f2;
+}
+
+/* Parametre des 3 sections de Footer */
+footer>section {
+    width: 446px;
+    font-size: 12px;
+}
+
+/*/ Parametre des titre de chaque section */
+footer>section>h2 {
+    margin-top: 35px;
+}
+
+/* Parametre des ul de chaque section */
+footer>section>ul {
+    margin-top: 16px;
+}
+
+/* Parametre des li pour chaque ul */
+footer>section>ul>li {
+    margin-top: 12px;
+    list-style: none;
+    font-size: 14px;
 }

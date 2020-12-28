@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="./Css/Style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" />
-    <title>Document</title>
+    <title>Réservia</title>
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- ******************************************************* -->
+    <!-- ************************ Header *********************** -->
+    <!-- ******************************************************* -->
     <header>
 
         <!-- Logo -->
@@ -23,17 +27,21 @@
         <nav>
             <ul id="menu_navigation">
                 <li><a href="accommodation">Hébergements</a></li>
-                <li><a href="activities">Activités</a></li>
+                <li><a href="activities" class="activite">Activités</a></li>
                 <li><a href="#">S'inscrire</a></li>
             </ul>
         </nav>
 
     </header>
 
-    <!-- Partie principale -->
+    <!-- ******************************************************* -->
+    <!-- ************************* Main ************************ -->
+    <!-- ******************************************************* -->
     <main>
 
-        <!-- Section 1 -->
+        <!-- ******************************************************* -->
+        <!-- ********************** Section 1 ********************** -->
+        <!-- ******************************************************* -->
         <section>
 
             <article>
@@ -43,40 +51,56 @@
 
             <article>
                 <form>
-                    <i class="fas fa-map-marker-alt"></i>
-                    <input type="text" placeholder="Marseille, France" />
-                    <button type="submit">Rechercher</button>
+                    <div class="boite_recherche">
+                        <div class="boite_icone">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <input type="text" placeholder="Marseille, France" />
+                        <button type="submit" class="rechercher">Rechercher</button>
+                    </div>
                 </form>
             </article>
 
-            <article>
+            <article class="filtres">
                 <h2>Filtres</h2>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
+
+                <button>
+                    <div class="blue">
+                        <i class="fas fa-money-bill-wave money"></i>
+                    </div>
+                    Économique
+                </button>
+
+                <button><i class="fas fa-child familial"></i>Familial</button>
+                <button><i class="fas fa-heart romantique"></i>Romantique</button>
+                <button><i class="fas fa-dog chien"></i>Animaux autorisés</button>
             </article>
 
             <article>
+                <div class="info">
+                    <i class="fas fa-info-circle"></i>
+                </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </article>
 
         </section>
 
-        <!-- Section 2 -->
+        <!-- ******************************************************* -->
+        <!-- *********************** Section 2 ********************* -->
+        <!-- ******************************************************* -->
         <section id="hebergements">
 
             <!-- Container hebergementq -->
-            <div class="container-1">
+            <div class="hebergements">
 
                 <h2>Hébergements à Marseille</h2>
-                <div class="container_grille">
+                <div class="container_rangees">
 
                     <div id="grille_image_1_premiere_range">
 
                         <!-- Carte -->
                         <article class="carte">
-                            <!-- rendre la fenetre cliquable-->
+                            <!-- Rendre la fenetre cliquable-->
                             <a href="#">
 
                                 <div class="boite_image">
@@ -222,19 +246,19 @@
             </div>
 
             <!-- Container les plus populaires -->
-            <div class="container-2">
+            <div class="populaires">
 
                 <h2>Les plus populaires <span><i class="fas fa-chart-line"></i></span></h2>
 
 
-                <div id="container_grille-2">
+                <div id="container_colonne">
 
                     <div id="grille_image_2">
 
                         <article class="carte-2">
                             <a href="#">
                                 <div class="boite_image-2">
-                                    <img src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                                    <img src="./images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                                         alt="Photo d'une chambre de l'hôtel" class="image-2">
                                 </div>
                                 <div class="boite_texte">
@@ -310,13 +334,20 @@
 
         </section>
 
-        <!-- Section 3 -->
+        <!-- ******************************************************* -->
+        <!-- *********************** Section 3 ********************* -->
+        <!-- ******************************************************* -->
         <section id="activite">
 
-            <!-- Container activite 1 -->
+            <div>
+                <h2>Activités à Marseille</h2>
+            </div>
+
+            <!-- Container pour les boite_carte -->
             <div class="container-3">
 
-                <h2>Activités à Marseille</h2>
+                <!-- Boite pour les cartes-3 -->
+                <div class="boite_carte">
 
                     <!-- Carte -->
                     <article class="carte-3">
@@ -325,85 +356,107 @@
 
                             <div class="boite_image-3">
                                 <img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                    alt="Photo d'une chambre de l'auberge" class="image-3">
+                                    alt="Photo du Vieux Port" class="image">
                             </div>
                             <p>Vieux Port</p>
 
                         </a>
                     </article>
                 </div>
-            </div>
-
-            <!-- Container activite 1 -->
-            <div class="container-4">
-
-                <h2>Activités à Marseille</h2>
-                <!-- Grille image 3 -->
-                <div class="container_grille-4">
 
 
+
+                <!-- Boite pour les deux cartes-4 -->
+                <div class="boite_carte-2">
 
                     <!-- Carte -->
-                              <article class="carte-4">
+                    <article class="carte-4a">
                         <!-- rendre la fenetre cliquable-->
-              <!--           <a href="#">
+                        <a href="#">
 
-                            <div class="boite_image-4">
-                                <img src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
-                                    alt="Photo d'une chambre de l'auberge" class="image-4">
+                            <div class="boite_image-4a">
+                                <img src="./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                                    alt="Photo du Fort de Pomègues" class="image">
                             </div>
                             <p>Fort de Pomègues</p>
 
-                        </a> -->
+                        </a>
                     </article>
+
+                    <!-- Carte -->
+                    <article class="carte-4b">
+                        <!-- rendre la fenetre cliquable-->
+                        <a href="#">
+
+                            <div class="boite_image-4b">
+                                <img src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                                    alt="Photo de l'îles du Frioul" class="image">
+                            </div>
+                            <p>Îles du Frioul</p>
+
+                        </a>
+                    </article>
+                </div>
+
+                <!-- Boite pour les cartes-3 -->
+                <div class="boite_carte">
+
+                    <!-- Carte -->
+                    <article class="carte-3">
+                        <!-- rendre la fenetre cliquable-->
+                        <a href="#">
+
+                            <div class="boite_image-3">
+                                <img src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+                                    alt="Photo du Parc National des Calanques" class="image">
+                            </div>
+                            <p>Parc National des Calanques</p>
+
+                        </a>
+                    </article>
+
+                </div>
+
+                <!-- Boite pour les deux cartes-4 -->
+                <div class="boite_carte-2">
+
+                    <!-- Carte -->
+                    <article class="carte-4c">
+                        <!-- rendre la fenetre cliquable-->
+                        <a href="#">
+
+                            <div class="boite_image-4c">
+                                <img src="./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                                    alt="Photo de Notre-Dame-de-la-Garde" class="image">
+                            </div>
+                            <p>Notre-Dame-de-la-Garde</p>
+
+                        </a>
+                    </article>
+
+                    <!-- Carte -->
+                    <article class="carte-4d">
+                        <!-- rendre la fenetre cliquable-->
+                        <a href="#">
+
+                            <div class="boite_image-4d">
+                                <img src="./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                                    alt="Photo du Parc Longchamp" class="image">
+                            </div>
+                            <p>Parc Longchamp</p>
+
+                        </a>
+                    </article>
+
                 </div>
             </div>
         </section>
 
-
-
-
-
-        <!-- Grille image 4 -->
-        <div>
-
-            <article id="fond-11" class="voile">
-                <h3>Fort de Pomègues</h3>
-            </article>
-
-            <article id="fond-12" class="voile">
-                <h3>Îles du Frioul</h3>
-            </article>
-
-        </div>
-
-        <!-- Grille image 5 -->
-        <div>
-
-            <article id="fond-13" class="voile">
-                <h3>Parc National des Calanques</h3>
-            </article>
-
-        </div>
-
-        <!-- Grille image 6 -->
-        <div>
-
-            <article id="fond-14" class="voile">
-                <h3>Notre-Dame-de-la-Garde</h3>
-            </article>
-
-            <article id="fond-15" class="voile">
-                <h3>Parc Longchamp</h3>
-            </article>
-
-        </div>
-
-        </section>
-
     </main>
 
-    <!-- Footer -->
+    <!-- ******************************************************* -->
+    <!-- ************************* Footer ********************** -->
+    <!-- ******************************************************* -->
     <footer>
 
         <!-- liste 1 -->
