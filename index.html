@@ -26,8 +26,8 @@
         <!-- Menu navigation -->
         <nav>
             <ul id="menu_navigation">
-                <li><a href="accommodation">Hébergements</a></li>
-                <li><a href="activities" class="activite">Activités</a></li>
+                <li><a href="#accommodation">Hébergements</a></li>
+                <li><a href="#activities" class="activite">Activités</a></li>
                 <li><a href="#">S'inscrire</a></li>
             </ul>
         </nav>
@@ -42,14 +42,15 @@
         <!-- ******************************************************* -->
         <!-- ********************** Section 1 ********************** -->
         <!-- ******************************************************* -->
-        <section>
+        <div>
 
-            <article>
+            <article id="entete">
                 <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre ville ou en pleine nature</p>
             </article>
 
-            <article>
+            <!-- ***** Rechercher *****-->
+            <div>
                 <form>
                     <div class="boite_recherche">
                         <div class="boite_icone">
@@ -59,44 +60,68 @@
                         <button type="submit" class="rechercher">Rechercher</button>
                     </div>
                 </form>
-            </article>
+            </div>
 
+            <!-- ***** Filtres *****-->
             <article class="filtres">
                 <h2>Filtres</h2>
 
-                <button id="economique">
-                        <i class="fas fa-money-bill-wave money icon-blue"></i>
-                    Économique
-                </button>
+                <!-- ***** Les 4 bouttons ***** -->
+                <div id="button_money">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <a href="#">
+                        <p>Économique</p>
+                    </a>
+                </div>
 
-                <button><i class="fas fa-child familial"></i>Familial</button>
-                <button><i class="fas fa-heart romantique"></i>Romantique</button>
-                <button><i class="fas fa-dog chien"></i>Animaux autorisés</button>
+                <div id="button_family">
+                    <i class="fas fa-child"></i>
+                    <a href="#">
+                        <p>Familial</p>
+                    </a>
+                </div>
+
+                <div id="button_love">
+                    <i class="fas fa-heart"></i>
+                    <a href="#">
+                        <p>Romantique</p>
+                    </a>
+                </div>
+
+                <div id="button_dog">
+                    <i class="fas fa-dog"></i>
+                    <a href="#">
+                        <p>Animaux autorisés</p>
+                    </a>
+                </div>
+
             </article>
 
-            <article>
+            <!-- ***** La ligne info *****-->
+            <div class="boite_info">
                 <div class="info">
-                    <i class="fas fa-info-circle"></i>
+                    <i class="fas fa-info"></i>
                 </div>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
-            </article>
+            </div>
 
-        </section>
+        </div>
 
         <!-- ******************************************************* -->
         <!-- *********************** Section 2 ********************* -->
         <!-- ******************************************************* -->
         <section id="hebergements">
 
-            <!-- Container hebergementq -->
-            <div class="hebergements">
+            <!-- Container hebergements -->
+            <div class="hebergements" id="accommodation">
 
                 <h2>Hébergements à Marseille</h2>
                 <div class="container_rangees">
 
+                    <!-- ***** Premiére rangé pour les 3 premiéres carte ***** -->
                     <div id="grille_image_1_premiere_range">
 
-                        <!-- Carte -->
+                        <!--  ***** Carte 1 de la 1ere rangé *****-->
                         <article class="carte">
                             <!-- Rendre la fenetre cliquable-->
                             <a href="#">
@@ -121,6 +146,7 @@
                             </a>
                         </article>
 
+                        <!-- ***** Carte 2 de la 1ere rangé *****-->
                         <article class="carte">
                             <a href="#">
                                 <div class="boite_image">
@@ -143,6 +169,7 @@
                             </a>
                         </article>
 
+                        <!-- ***** Carte 3 de la 1ere rangé ***** -->
                         <article class="carte">
                             <a href="#">
                                 <div class="boite_image">
@@ -167,8 +194,10 @@
 
                     </div>
 
+                    <!-- ***** Deuxiéme rangé pour les trois cartes suivantes ***** -->
                     <div id="grille_image_1_deuxieme_range">
 
+                        <!-- ***** Carte 1 de la 2eme rangé ***** -->
                         <article class="carte">
                             <a href="#">
                                 <div class="boite_image">
@@ -191,6 +220,7 @@
                             </a>
                         </article>
 
+                        <!-- ***** Carte 2 de la 2eme rangé ***** -->
                         <article class="carte">
                             <a href="#">
                                 <div class="boite_image">
@@ -213,6 +243,7 @@
                             </a>
                         </article>
 
+                        <!-- ***** Carte 3 de la 2eme rangé ***** -->
                         <article class="carte">
                             <a href="#">
                                 <div class="boite_image">
@@ -248,11 +279,12 @@
 
                 <h2>Les plus populaires <span><i class="fas fa-chart-line"></i></span></h2>
 
-
                 <div id="container_colonne">
 
+                    <!-- ***** Grille pour les trois cartes ***** -->
                     <div id="grille_image_2">
 
+                        <!-- ***** Premiére carte ***** -->
                         <article class="carte-2">
                             <a href="#">
                                 <div class="boite_image-2">
@@ -277,6 +309,7 @@
                             </a>
                         </article>
 
+                        <!-- ***** Seconde carte ***** -->
                         <article class="carte-2">
                             <a href="#">
                                 <div class="boite_image-2">
@@ -301,6 +334,7 @@
                             </a>
                         </article>
 
+                        <!-- ***** Troisiéme carte ***** -->
                         <article class="carte-2">
                             <a href="#">
                                 <div class="boite_image-2">
@@ -342,13 +376,13 @@
             </div>
 
             <!-- Container pour les boite_carte -->
-            <div class="container-3">
+            <div class="container-3" id="activities">
 
                 <!-- Boite pour les cartes-3 -->
-                <div class="boite_carte">
+                <div class="boite_carte vieux_port">
 
-                    <!-- Carte -->
-                    <article class="carte-3">
+                    <!-- ***** Carte 1 1ere colonne ***** -->
+                    <div class="carte-3 ">
                         <!-- rendre la fenetre cliquable-->
                         <a href="#">
 
@@ -359,7 +393,7 @@
                             <p>Vieux Port</p>
 
                         </a>
-                    </article>
+                    </div>
                 </div>
 
 
@@ -367,8 +401,8 @@
                 <!-- Boite pour les deux cartes-4 -->
                 <div class="boite_carte-2">
 
-                    <!-- Carte -->
-                    <article class="carte-4a">
+                    <!-- ***** Carte 2 2eme colonne ***** -->
+                    <div class="carte-4a">
                         <!-- rendre la fenetre cliquable-->
                         <a href="#">
 
@@ -379,10 +413,10 @@
                             <p>Fort de Pomègues</p>
 
                         </a>
-                    </article>
+                    </div>
 
-                    <!-- Carte -->
-                    <article class="carte-4b">
+                    <!-- ***** Carte 3 2eme colonne ***** -->
+                    <div class="carte-4b">
                         <!-- rendre la fenetre cliquable-->
                         <a href="#">
 
@@ -393,14 +427,14 @@
                             <p>Îles du Frioul</p>
 
                         </a>
-                    </article>
+                    </div>
                 </div>
 
                 <!-- Boite pour les cartes-3 -->
                 <div class="boite_carte">
 
-                    <!-- Carte -->
-                    <article class="carte-3">
+                    <!-- ***** Carte 4 3eme colonne ***** -->
+                    <div class="carte-3">
                         <!-- rendre la fenetre cliquable-->
                         <a href="#">
 
@@ -411,15 +445,15 @@
                             <p>Parc National des Calanques</p>
 
                         </a>
-                    </article>
+                    </div>
 
                 </div>
 
                 <!-- Boite pour les deux cartes-4 -->
                 <div class="boite_carte-2">
 
-                    <!-- Carte -->
-                    <article class="carte-4c">
+                    <!-- ***** Carte 5 4eme colonne ***** -->
+                    <div class="carte-4c">
                         <!-- rendre la fenetre cliquable-->
                         <a href="#">
 
@@ -430,10 +464,10 @@
                             <p>Notre-Dame-de-la-Garde</p>
 
                         </a>
-                    </article>
+                    </div>
 
-                    <!-- Carte -->
-                    <article class="carte-4d">
+                    <!-- ***** Carte 6 4eme colonne ***** -->
+                    <div class="carte-4d">
                         <!-- rendre la fenetre cliquable-->
                         <a href="#">
 
@@ -444,7 +478,7 @@
                             <p>Parc Longchamp</p>
 
                         </a>
-                    </article>
+                    </div>
 
                 </div>
             </div>

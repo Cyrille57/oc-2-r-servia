@@ -14,7 +14,6 @@ body {
     max-width: 1340px;
     margin: 0 auto;
     font-family: "Raleway", "Arial", "Verdana", "sans-serif";
-    border: 2px solid black;
 }
 
 
@@ -23,7 +22,7 @@ body {
 /* *************************************** */
 
 
-/* Paramètre du header */
+/* ***** Paramètre du header ***** */
 header {
     display: flex;
     flex-direction: row;
@@ -31,7 +30,13 @@ header {
     align-items: center;
 }
 
-/* Paramètre du menu */
+/* ***** Parametre de l'icone ***** */
+#logo {
+    /* Espacement de l'icone par rapport a la marge */
+    margin-left: 9px;
+}
+
+/* ***** Paramètre du menu ***** */
 nav {
     /*container qui vas recevoir ul */
     width: 50%;
@@ -71,33 +76,36 @@ a {
 /* *************************************** */
 
 
-/* Espace entre header et main */
+
 main {
+    /* Espace entre header et main */
     margin-top: 20px;
 }
+
 
 /* *************************************** */
 /* ************* Section 1 *************** */
 /* *************************************** */
 
 
-/* Espace entre le titre et paragraphe */
-main>section>article>p {
-    margin-top: 8px;
-    font-size: 18px;
+#entete {
+    /* Décale sur la gauche le h2 et p */
+    margin-left: 9px;
 }
 
-/* Parametre boite pour la barre de recherche */
-main>section>article>form {
+/* ***** Boite dialogue rechercher ***** */
+main>div>div>form {
+    /* Parametre boite pour la barre de recherche */
     margin-top: 18px;
+    margin-left: 9px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     border-radius: 30px 0px 0px 30px;
 }
 
-/* Parametre de la boite pour l'icone et recherche */
 .boite_recherche {
+    /* Parametre de la boite pour l'icone et recherche */
     height: 51px;
     width: 420px;
     display: flex;
@@ -107,8 +115,8 @@ main>section>article>form {
     border-radius: 20px 18px 18px 20px;
 }
 
-/* Parametre de la boite pour l'icone */
 .boite_icone {
+    /* Parametre de la boite pour l'icone */
     height: 46px;
     width: 51px;
     display: flex;
@@ -116,24 +124,24 @@ main>section>article>form {
     align-items: center;
 }
 
-/* Parametre de l'input */
 input {
+    /* Parametre de l'input */
     height: 46px;
     width: 234px;
     border: none;
     padding-left: 20px;
 }
 
-/* Parametre du placeholder */
 input::placeholder {
+    /* Parametre du placeholder */
     font-size: 18px;
     font-weight: bold;
     color: black;
     opacity: 1;
 }
 
-/* Parametre du bouton */
 .rechercher {
+    /* Parametre du bouton */
     height: 51px;
     width: 134px;
     color: white;
@@ -142,119 +150,187 @@ input::placeholder {
     border: 1px solid #0065fc;
     border-radius: 0px 20px 20px 0px;
 }
-.icon-blue{
-    color:#0065fc;
 
-}
-/* Parametre de la boite pour h2 et les boutoon filtres */
+/* ***** Filtres ***** */
 .filtres {
-    margin-top: 25px;
+    /* Parametre de la boite pour h2 et les boutton filtres */
+    margin-top: 30px;
+    margin-left: 9px;
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: bold;
+
 }
 
-/* Parametre du h2 filtre */
 .filtres>h2 {
+    /* Parametre du h2 filtre */
     font-size: 18px;
     font-weight: bold;
 }
 
-/* Paramétres des bouttons*/
-.filtres>button {
-    height: 50px;
-    display:flex;
-    align-items: center;
-    margin-left: 24px;
-    border-radius: 35px;
-    border: 3px solid #d9d9d9;
-    background-color: white;
-    color: black;
-    font-weight: bold;
-}
-#economique{
-    width:193px;
-    border:3px solid black;
-}
-.money, .familial, .romantique, .chien{
-    height: 50px;
-    width: 50px;
-    display:flex;
-    align-items: center;
-    border-radius:50%;
-    background-color: #deebff;
-}
-.money::before, .familial::before, .romantique::before, .chien::before                         {
-    height: 50px;
-    width: 50px;
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-.blue{
-    background-color: #0065fc;
-}
-
-/* parametre de la boite pour info*/
-.info {
+/* ***** Boutton Filtres ***** */
+#button_money,
+#button_family,
+#button_love,
+#button_dog {
+    /* Parametre de la boite pour l'icone et le a */
     display: flex;
     align-items: center;
 }
 
-/* Parametre de l'icone*/
-.info>i {}
+#button_money>i,
+#button_money>a {
+    /* Parametre taille et marge de money */
+    width: 192px;
+    margin-left: 25px;
+}
 
-/* Parametre de la boite du dernier article*/
-main>section>:last-child {
-    margin-top: 10px;
+#button_family>i,
+#button_family>a {
+    /* Parametre taille et marge de familial */
+    width: 150px;
+    margin-left: 168px;
+}
+
+#button_love>i,
+#button_love>a {
+    /* Parametre taille et marge de love */
+    width: 182px;
+    margin-left: 120px;
+}
+
+#button_dog>i,
+#button_dog>a {
+    /* Parametre taille et marge de dog */
+    width: 240px;
+    margin-left: 158px;
+}
+
+#button_money>i,
+#button_family>i,
+#button_love>i,
+#button_dog>i {
+    /* Parametre général de l'icone */
+    height: 50px;
+    width: 50px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    color: #0065fc;
+    background-color: #deebff;
+}
+
+#button_money>a,
+#button_family>a,
+#button_love>a,
+#button_dog>a {
+    /* Parametre  générale de la boite a pour p */
+    height: 46px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: black;
+    background-color: white;
+    border: 3px solid #f2f2f2;
+    border-radius: 30px;
+}
+
+#button_money>a>p,
+#button_family>a>p,
+#button_love>a>p,
+#button_dog>a>p {
+    /* Parametre du texte dans le bouitton */
+    margin-left: 63px;
+}
+
+#button_money>a:hover,
+#button_family>a:hover,
+#button_love>a:hover,
+#button_dog>a:hover {
+    /* Animation des boutons */
+    color: blue;
+    border: 3px solid #deebff;
+}
+
+/* ***** La ligne info  ***** */
+.boite_info {
+    /* Parametre de la boite du dernier article*/
+    margin-top: 25px;
     display: flex;
     justify-content: flex-start;
     align-content: center;
 }
 
-/* Parametre du paragraphe de ce dernier article */
-main>section>:last-child>p {
-    margin-left: 10px;
+.info {
+    /* parametre de la boite pour info*/
+    display: flex;
+    align-items: center;
 }
+
+.info>i {
+    /* Parametre de l'icone*/
+    width: 25px;
+    height: 25px;
+    margin-left: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #dddddd;
+    border-radius: 35px;
+    color: #0065fc;
+}
+
+.boite_info>p {
+    /* Parametre du texte */
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
 
 /* *************************************** */
 /* ******* Section 2 hebergements ******** */
 /* *************************************** */
 
-/* Parametre de la boite pour container_rangees et 2*/
+/* ***** Hebergements ***** */
 #hebergements {
+    /* Parametre de la boite pour container_rangees et 2*/
     height: 625px;
     margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Parametre .hebergements pour container_rangees*/
 .hebergements {
+    /* Parametre .hebergements pour container_rangees*/
     width: 65.33%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
-/* Parametre commune a .hebergements et .populaires*/
 .hebergements,
 .populaires {
+    /* Parametre commune a .hebergements et .populaires*/
     height: auto;
     border-radius: 35px;
     background-color: #F2F2F2;
 
 }
 
-/* Parametre réglage h2 */
 .hebergements>h2 {
+    /* Parametre réglage h2 */
     margin-top: 20px;
     margin-left: 40px;
 }
 
-/* Parametre container_rangees pour .grille_image_1_premiere_range et #grille_image_1_deuxieme_range */
 .container_rangees {
+    /* Parametre container_rangees pour .grille_image_1_premiere_range et #grille_image_1_deuxieme_range */
     height: 450px;
     margin-left: 40px;
     margin-right: 40px;
@@ -263,16 +339,17 @@ main>section>:last-child>p {
     justify-content: space-around;
 }
 
-/* Paramétre grille_image_1 pour les cartes*/
 #grille_image_1_premiere_range,
 #grille_image_1_deuxieme_range {
+    /* Paramétre grille_image_1 pour les cartes*/
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-/*Parametre de la boite carte */
+/* ***** Cartes ***** */
 .carte {
+    /*Parametre de la boite carte */
     height: 200px;
     width: 246px;
     display: flex;
@@ -282,8 +359,8 @@ main>section>:last-child>p {
     box-shadow: 1px 1px 5px 2px #d9d9d9;
 }
 
-/* Parametre boite image pour integrer l'image */
 .boite_image {
+    /* Parametre boite image pour integrer l'image */
     height: 114px;
     width: 236px;
     display: flex;
@@ -293,36 +370,36 @@ main>section>:last-child>p {
     border-radius: 30px 30px 0px 0px;
 }
 
-/* Parametre de l'image */
 .image {
+    /* Parametre de l'image */
     width: 100%;
     border-radius: 30px 30px 0px 0px;
     object-fit: cover;
 }
 
-/* Parametre du titre */
 .carte h2 {
+    /* Parametre du titre */
     margin-top: 13px;
     margin-left: 7%;
     font-size: 16px;
     color: black;
 }
 
-/* Parametre du paragraphe */
 .carte p {
+    /* Parametre du paragraphe */
     margin-left: 7%;
     color: black;
 }
 
-/* Parametre des icones etoiles */
 .etoile {
+    /* Parametre des icones etoiles */
     margin-top: 5px;
     margin-left: 7%;
     color: #0065fc;
 }
 
-/* Parametre réglage p */
 .hebergements>p {
+    /* Parametre réglage p */
     margin-top: 20px;
     margin-bottom: 47px;
     margin-left: 40px;
@@ -334,27 +411,29 @@ main>section>:last-child>p {
 /* ******** Section 2 populaires ********* */
 /* *************************************** */
 
-/* Parametre .populaires pour container_colonne*/
+
+/* ***** Populaires ***** */
 .populaires {
+    /* Parametre .populaires pour container_colonne*/
     width: 31.33%;
     margin-left: 3%;
     display: flex;
     flex-direction: column;
 }
 
-/* Parametre .populaires titre*/
 .populaires>h2 {
+    /* Parametre .populaires titre*/
     margin-top: 24px;
     margin-left: 40px;
 }
 
-/* Parametre de l'icone */
 span {
+    /* Parametre de l'icone */
     margin-left: 22%;
 }
 
-/* parametre du container_colonne */
 #container_colonne {
+    /* parametre du container_colonne pour grille_image_2 */
     height: 520px;
     margin-top: 20px;
     margin-left: 36px;
@@ -365,6 +444,7 @@ span {
 }
 
 #grille_image_2 {
+    /* Parametre de la boite pour recevoir les cartes */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -372,8 +452,9 @@ span {
     flex-wrap: nowrap;
 }
 
-/*Parametre de la boite carte-2 */
+/* ***** Cartes ***** */
 .carte-2 {
+    /*Parametre de la boite carte-2 */
     height: 143px;
     width: 343px;
     display: flex;
@@ -388,8 +469,8 @@ span {
     display: flex;
 }
 
-/* Parametre boite image pour integrer l'image */
 .boite_image-2 {
+    /* Parametre boite image pour integrer l'image */
     height: 134px;
     width: 127px;
     display: flex;
@@ -406,33 +487,34 @@ span {
 }
 
 .boite_texte {
+    /* Boite qui vas recevoir le h2,p et étoiles */
     width: 180px;
 }
 
-/* Parametre du titre */
 .carte-2 h2 {
+    /* Parametre du titre */
     margin-top: 19px;
     margin-left: 21px;
     font-size: 16px;
     color: black;
 }
 
-/* Parametre du paragraphe */
 .carte-2 p {
+    /* Parametre du paragraphe */
     margin-left: 21px;
     margin-top: 10px;
     color: black;
 }
 
-/* Parametre des icones etoiles */
 .etoile-2 {
+    /* Parametre des icones etoiles */
     margin-top: 25px;
     margin-left: 21px;
     color: #0065fc;
 }
 
-/* Change la couleur des etoiles */
 .couleur {
+    /* Change la couleur des etoiles */
     color: #d9d9d9;
 }
 
@@ -440,8 +522,10 @@ span {
 /* ********* Section 3 activite ********** */
 /* *************************************** */
 
-/* Parametre de la boite pour container-3 */
+
+/* ***** Activite ***** */
 #activite {
+    /* Parametre de la boite pour container-3 */
     max-width: 100%;
     height: 530px;
     margin-top: 65px;
@@ -449,30 +533,27 @@ span {
     flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
-    border:2px solid black;
 }
 
-
-
-/* Parametre container-3 pour boite_carte*/
 .container-3 {
+    /* Parametre container-3 pour boite_carte*/
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    border:2px solid red;
 }
 
-/* Parametre boite_carte pour carte-3 */
 .boite_carte {
+    /* Parametre boite_carte pour carte-3 */
     width: 320px;
     height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border:2px solid blueviolet;
 }
 
+/* ***** Cartes ***** */
 .carte-3 {
+    /* Parametre de la boite pour boite image */
     height: 445px;
     width: 302px;
     display: flex;
@@ -482,8 +563,13 @@ span {
     box-shadow: 1px 1px 5px 2px #d9d9d9;
 }
 
-/* Parametre boite image pour integrer l'image */
+.vieux_port {
+    /* Pour accoler la carte-3 vieux port a gauche*/
+    justify-content: start;
+}
+
 .boite_image-3 {
+    /* Parametre boite image pour integrer l'image */
     height: 390px;
     width: 302px;
     display: flex;
@@ -499,23 +585,22 @@ span {
     font-weight: bold;
 }
 
-/* Parametre boite_carte pour carte-4 */
 .boite_carte-2 {
+    /* Parametre boite_carte pour carte-4 */
     width: 320px;
     height: 480px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    border:2px solid green;
 }
 
-/* Parametre des cartes */
 .carte-4,
 .carte-4a,
 .carte-4b,
 .carte-4c,
 .carte-4d {
+    /* Parametre des cartes */
     width: 302px;
     display: flex;
     justify-content: center;
@@ -550,11 +635,11 @@ span {
     margin-left: 14px;
 }
 
-/* Parametre boite image pour integrer l'image */
 .boite_image-4a,
 .boite_image-4b,
 .boite_image-4c,
 .boite_image-4d {
+    /* Parametre boite image pour integrer l'image */
     width: 302px;
     display: flex;
     flex-wrap: nowrap;
@@ -578,11 +663,11 @@ span {
     height: 153px;
 }
 
-/* Parametre du texte */
 .carte-4a p,
 .carte-4b p,
 .carte-4c p,
 .carte-4d p {
+    /* Parametre du texte */
     margin-left: 20px;
     margin-top: 18px;
     color: #000000;
@@ -594,8 +679,10 @@ span {
 /* *************** Footer **************** */
 /* *************************************** */
 
-/* Parametrage du Footer */
+
+
 footer {
+    /* Parametrage du Footer */
     height: 200px;
     margin-top: 30px;
     display: flex;
@@ -603,24 +690,24 @@ footer {
     background-color: #f2f2f2;
 }
 
-/* Parametre des 3 sections de Footer */
 footer>section {
+    /* Parametre des 3 sections de Footer */
     width: 446px;
     font-size: 12px;
 }
 
-/*/ Parametre des titre de chaque section */
 footer>section>h2 {
+    /* Parametre des titre de chaque section */
     margin-top: 35px;
 }
 
-/* Parametre des ul de chaque section */
 footer>section>ul {
+    /* Parametre des ul de chaque section */
     margin-top: 16px;
 }
 
-/* Parametre des li pour chaque ul */
 footer>section>ul>li {
+    /* Parametre des li pour chaque ul */
     margin-top: 12px;
     list-style: none;
     font-size: 14px;
