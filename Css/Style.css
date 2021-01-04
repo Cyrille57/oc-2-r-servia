@@ -11,9 +11,8 @@
 
 body {
     /* Définis paramétre du contenu suivant la taille de la maquette pc fourni */
-    max-width: 1340px;
-    margin: 0 auto;
     font-family: "Raleway", "Arial", "Verdana", "sans-serif";
+
 }
 
 
@@ -24,16 +23,23 @@ body {
 
 /* ***** Paramètre du header ***** */
 header {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 42px;
+}
+
+/* ***** Parametre de la boite invisible pour logo et nav ***** */
+#boite_invisible_header {
+    max-width: 1340px;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 /* ***** Parametre de l'icone ***** */
 #logo {
-    /* Espacement de l'icone par rapport a la marge */
-    margin-left: 9px;
+    margin-left: 6px;
 }
 
 /* ***** Paramètre du menu ***** */
@@ -46,9 +52,9 @@ nav {
 
 #menu_navigation {
     /* paramétrage du container qui vas recevoir li */
-    width: 69%;
+    width: 64%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style: none;
 }
 
@@ -58,16 +64,21 @@ a {
     color: #0065FC;
 }
 
-.activite {
-    /* change la couleur du mot activite */
-    color: black;
-    margin-left: 8px;
+.accommodation {
+    /* Marge à gauche */
+    margin-left: 15%
 }
 
-#menu_navigation li:last-child {
-    /* mettre en gras le dernier élément de li */
+.activite {
+    /* change la couleur du mot activite et marge à gauche */
+    color: black;
+    margin-left: 20px;
+}
+
+.register {
+    /* mettre en gras le dernier élément de li et marge à droite*/
     font-weight: bold;
-    margin-right: 21px;
+    margin-right: 28px;
 }
 
 
@@ -79,7 +90,13 @@ a {
 
 main {
     /* Espace entre header et main */
-    margin-top: 20px;
+    margin-top: 23px;
+}
+
+/* Parametre de la boite invisible pour les sections*/
+#boite_invisible_main {
+    max-width: 1340px;
+    margin: 0 auto;
 }
 
 
@@ -90,14 +107,19 @@ main {
 
 #entete {
     /* Décale sur la gauche le h2 et p */
-    margin-left: 9px;
+    margin-left: 6px;
+}
+
+#entete>p {
+    /* décale le p du titre */
+    margin-top: 10px;
 }
 
 /* ***** Boite dialogue rechercher ***** */
-main>div>div>form {
+#form_recherche {
     /* Parametre boite pour la barre de recherche */
-    margin-top: 18px;
-    margin-left: 9px;
+    margin-top: 16px;
+    margin-left: 5px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -154,9 +176,11 @@ input::placeholder {
 /* ***** Filtres ***** */
 .filtres {
     /* Parametre de la boite pour h2 et les boutton filtres */
+    width: 100%;
     margin-top: 30px;
     margin-left: 9px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 16px;
     font-weight: bold;
@@ -259,7 +283,7 @@ input::placeholder {
 /* ***** La ligne info  ***** */
 .boite_info {
     /* Parametre de la boite du dernier article*/
-    margin-top: 25px;
+    margin-top: 34px;
     display: flex;
     justify-content: flex-start;
     align-content: center;
@@ -286,7 +310,7 @@ input::placeholder {
 
 .boite_info>p {
     /* Parametre du texte */
-    margin-left: 10px;
+    margin-left: 11px;
     display: flex;
     align-items: center;
     font-size: 18px;
@@ -300,8 +324,9 @@ input::placeholder {
 /* ***** Hebergements ***** */
 #hebergements {
     /* Parametre de la boite pour container_rangees et 2*/
+    width: 100%;
     height: 625px;
-    margin-top: 40px;
+    margin-top: 38px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -418,6 +443,7 @@ input::placeholder {
     width: 31.33%;
     margin-left: 3%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -434,13 +460,12 @@ span {
 
 #container_colonne {
     /* parametre du container_colonne pour grille_image_2 */
-    height: 520px;
-    margin-top: 20px;
+    height: 510px;
     margin-left: 36px;
     margin-right: 36px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 #grille_image_2 {
@@ -448,7 +473,7 @@ span {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: nowrap;
 }
 
@@ -683,30 +708,48 @@ span {
 
 footer {
     /* Parametrage du Footer */
-    height: 200px;
+    height: 217px;
+    width: 100%;
     margin-top: 30px;
-    display: flex;
-    justify-content: flex-start;
     background-color: #f2f2f2;
 }
 
-footer>section {
+/* ***** Parametre boite pour les 3 sections ***** */
+#boite_invisible_footer {
+    max-width: 1340px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    border: 1px solid red
+}
+
+
+#footer_accommodation {
+    /* Marge à gauche */
+    margin-left: 19%;
+}
+
+#footer_assistance {
+    /* Marge à gauche */
+    margin-left: 21.5%;
+}
+
+#boite_invisible_footer>section {
     /* Parametre des 3 sections de Footer */
-    width: 446px;
     font-size: 12px;
 }
 
-footer>section>h2 {
+#boite_invisible_footer>section>h2 {
     /* Parametre des titre de chaque section */
     margin-top: 35px;
 }
 
-footer>section>ul {
+#boite_invisible_footer>section>ul {
     /* Parametre des ul de chaque section */
     margin-top: 16px;
 }
 
-footer>section>ul>li {
+#boite_invisible_footer>section>ul>li {
     /* Parametre des li pour chaque ul */
     margin-top: 12px;
     list-style: none;
