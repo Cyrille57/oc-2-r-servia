@@ -48,280 +48,544 @@
     /* *************************************** */
     /* *************** General *************** */
     /* *************************************** */
-    * {
-        /* Retire la marge et le padding par défault */
-        margin: 0;
-        padding: 0;
+
+
+    .ecran_pc {
+        /* Pour cacher les élémentz d'un ecran portable */
+        visibility: collapse;
     }
 
-    body {
-        /* Définis paramétre du contenu suivant la taille de la maquette pc fourni */
-        font-family: "Raleway", "Arial", "Verdana", "sans-serif";
-
+    .ecran_portable {
+        /* Pour cacher les élémentz d'un ecran pc */
+        visibility: visible;
     }
-
 
     /* *************************************** */
     /* *************** Header **************** */
     /* *************************************** */
 
     /* ***** Paramètre du header ***** */
-header {
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
+    header {
+        margin-top: 20px;
+    }
 
-/* ***** Parametre de la boite invisible pour logo et nav ***** */
-#boite_invisible_header {
-    max-width: 767px;
-    height: 96px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    border:3px solid black
-}
-#logo{
-    margin-left: 5%;
-    border: 1px solid blue;
-}
-#navigation{
-    border: 1px solid blue;
-}
-#menu_navigation{
-    max-width: 767px;
-    height: 96px;
-    display:flex;
-    list-style: none;
-    border: 1px solid purple;
-}
-.accommodation{
+    /* ***** Parametre de la boite invisible pour logo et les header ***** */
+    #boite_invisible_header {
+        max-width: 767px;
+        height: 96px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 
-}
-.activite{
+    /* ***** Parametre du logo ***** */
+    #logo {
+        margin-left: 5%;
+    }
 
-}
-.register{
-}
-.li_un{
- align-self: flex-end;
-}
-.li_deux{
-    align-self: flex-end;
+    /* *****  Parametre du header_haut ***** */
+    #header_haut {
+        order: 1;
+        width: 50%;
+    }
 
-}
-.li_trois{
-}
+    #register {
+        /* Parametre de l'ul pour "s'inscrire" */
+        margin-left: 50%;
+    }
 
-/* *************************************** */
-/* **************** Main ***************** */
-/* *************************************** */
+    /* *****  Parametre du header_bas ***** */
+    #header_bas {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
 
-main {
-    /* Espace entre header et main */
-    margin-top: 52px;
-}
-/* Parametre de la boite invisible pour les sections*/
-#boite_invisible_main {
+    #menu_navigation {
+        /* paramétrage du container qui vas recevoir li */
+        width: 100%;
+        margin-left: 0%;
+        justify-content: space-around;
+        list-style: none;
+    }
+
+    .li_un {
+        /* Change la marge du mot hebergements à droite */
+        margin-right: 10%;
+    }
+
+    .li_deux {
+        /* change la marge du mot activite à droite */
+        margin-right: 4%;
+    }
+
+    /* *****  Parametre de la boite_trait ***** */
+    #boite_trait {
+        width: 100%;
+        margin-top: 4%;
+        display: flex;
+    }
+
+    #trait_horizontal_1 {
+        /* Parametre du trait de gauche */
+        width: 50%;
+        margin-left: 0%;
+        display: inline-block;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    #trait_horizontal_2 {
+        /* Parametre du trait de droite */
+        width: 50%;
+        margin-left: 0%;
+        display: inline-block;
+        border-bottom: 3px solid #f2f2f2;
+
+    }
+
+    /* *************************************** */
+    /* **************** Main ***************** */
+    /* *************************************** */
+
+    main {
+        /* Espace entre header et main */
+        margin-top: 8%;
+    }
+
+
+    /* *************************************** */
+    /* ************* Section 1 *************** */
+    /* *************************************** */
+
+    /* ***** Parametre de la boite invisible pour sections 1 ***** */
+    #boite_invisible_section1 {
+        max-width: 767px;
+        height: 539px;
+        margin: 0 auto;
+    }
+
+    #entete {
+        /* Décale sur la gauche le h2 et p */
+        margin-left: 5%;
+    }
+
+    #entete>p {
+        /* décale le p du titre */
+        margin-top: 12px;
+        margin-bottom: 36px;
+    }
+
+    /* ***** Boite dialogue rechercher ***** */
+    #form_recherche {
+        /* Parametre boite pour la barre de recherche */
+        width: 367px;
+        margin: 0 auto;
+        margin-top: 0px;
+        margin-left: 0px;
+        justify-content: center;
+    }
+
+    .boite_recherche {
+        /* Parametre de la boite pour l'icone et recherche */
+        height: 51px;
+        width: 325px;
+        background-color: #f2f2f2;
+    }
+
+    .boite_icone_2 {
+        /* Parametre de la boite pour la deuxiéme icone */
+        height: 46px;
+        width: 51px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        background-color: #0065fc;
+        border: 1px solid #0065fc;
+    }
+
+    .deuxieme_icone::before {
+        /* Couleur icone loupe */
+        color: white;
+    }
+
+    input {
+        /* Parametre de l'input */
+        width: 243px;
+        padding-left: 17px;
+    }
+
+    /* ***** Filtres ***** */
+    .filtres {
+        /* Parametre de la boite pour h2 et les boutton filtres */
+        width: 325px;
+        height: 245px;
+        margin-top: 8.8%;
+        margin-left: 0%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .boite_button {
+        /* Parametre de la boite pour les boutons economiques et familial */
+        width: 365px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filtres>h2 {
+        /* Parametre du h2 filtre */
+        margin-left: 22.4px
+    }
+
+    /* ***** Boutton Filtres ***** */
+
+
+    #button_money,
+    #button_love,
+    #button_dog {
+        /* Parametre de la boite pour l'icone et le a */
+        margin-left: 19px;
+    }
+
+    #button_money>i,
+    #button_money>a {
+        /* Parametre taille et marge de money */
+        width: 172px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    #button_family {
+        /* Taille du cercle de l'icone */
+        width: 50px;
+        margin-right: 110px;
+    }
+
+    #button_family>i,
+    #button_family>a {
+        /* Parametre taille et marge de familial */
+        width: 135px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    #button_love>i,
+    #button_love>a {
+        /* Parametre taille et marge de love */
+        width: 169px;
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+
+    #button_dog>i,
+    #button_dog>a {
+        /* Parametre taille et marge de dog */
+        width: 220px;
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+
+    #button_money>i,
+    #button_family>i,
+    #button_love>i,
+    #button_dog>i {
+        /* Parametre général de l'icone */
+        height: 50px;
+        width: 50px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        color: #0065fc;
+        background-color: #deebff;
+    }
+
+    /* ***** La ligne info  ***** */
+    .boite_info {
+        /* Parametre de la boite du dernier article*/
+        height: 41px;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info>i {
+        /* Parametre de l'icone*/
+        margin-left: 20px;
+    }
+
+    .boite_info>p {
+        /* Parametre du texte */
+        height: 27px;
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    /* *************************************** */
+    /* ******* Section 2 hebergements ******** */
+    /* *************************************** */
+
+
+    /* ***** Parametre de la boite invisible pour section 2 ***** */
+#boite_invisible_section2 {
+    /* Parametre de la boite pour container_rangees */
     max-width: 767px;
     height: auto;
+    margin-top:0px;
+    justify-content: flex-start;
+    flex-direction: column-reverse;
+    border: px solid black;
+}
+
+.hebergements{
+    width: 367px;
+    height: 1410px;
+    justify-content: flex-start;
+    background-color:white;
+    border: px solid blue;
+}
+
+.hebergements>h2 {
+    /* Parametre réglage h2 */
+    margin-top: 35px;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.container_rangees {
+    /* Parametre container_rangees pour .grille_image_1_premiere_range et #grille_image_1_deuxieme_range */
+    height: 1255px;
     margin: 0 auto;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
-    border:3px solid black
 }
 
-/* *************************************** */
-/* ************* Section 1 *************** */
-/* *************************************** */
-
-#entete {
-    /* Décale sur la gauche le h2 et p */
-    margin-left: 5%;
-}
-#entete>p {
-    /* décale le p du titre */
-    margin-top: 10px;
-}
-
-/* ***** Boite dialogue rechercher ***** */
-#form_recherche {
-    /* Parametre boite pour la barre de recherche */
+#grille_image_1_premiere_range,
+#grille_image_1_deuxieme_range {
+    /* Paramétre grille_image_1 pour les cartes*/
     
-    margin-top: 16px;
-    margin-left: 4%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    border-radius: 30px 0px 0px 30px;
-    border:1px solid red
+    align-content: center;
+    flex-wrap: wrap;
 }
-
-.boite_recherche {
-    /* Parametre de la boite pour l'icone et recherche */
-    height: 51px;
-    width: 420px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background-color: #f2f2f2;
-    border-radius: 20px 18px 18px 20px;
-    border:1px solid green;
-}
-
-.boite_icone {
-    /* Parametre de la boite pour l'icone */
-    height: 46px;
-    width: 51px;
+/* ***** Cartes ***** */
+.carte {
+    /*Parametre de la boite carte */
+    height: 200px;
+    width: 323px;
+    margin-top: 12px;
+    margin: 12px auto 0px;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
-
-input {
-    /* Parametre de l'input */
-    height: 46px;
-    width: 231px;
-    border: none;
-    padding-left: 20px;
-}
-
-input::placeholder {
-    /* Parametre du placeholder */
-    font-size: 18px;
-    font-weight: bold;
-    color: black;
-    opacity: 1;
-}
-
-.rechercher {
-    /* Parametre du bouton */
-    height: 51px;
-    width: 134px;
-    color: white;
-    font-size: 18px;
-    background-color: #0065fc;
-    border: 1px solid #0065fc;
-    border-radius: 0px 20px 20px 0px;
-}
-
-/* ***** Filtres ***** */
-.filtres {
-    /* Parametre de la boite pour h2 et les boutton filtres */
-    width: 100%;
-    margin-top: 30px;
-    margin-left: %;
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    font-weight: bold;
-    border: 1px solid red;
-
-}
-
-.filtres>h2 {
-    /* Parametre du h2 filtre */
-    margin-left:5%;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* ***** Boutton Filtres ***** */
-#button_money,
-#button_family,
-#button_love,
-#button_dog {
-    /* Parametre de la boite pour l'icone et le a */
-    margin-left:4%;
-    display: flex;
-    align-items: center;
-}
-
-#button_money>i,
-#button_money>a {
-    /* Parametre taille et marge de money */
-    width: 192px;
-    margin-top:15px;
-    margin-left: px;
-}
-
-#button_family>i,
-#button_family>a {
-    /* Parametre taille et marge de familial */
-    width: 150px;
-    margin-left: px;
-}
-
-#button_love>i,
-#button_love>a {
-    /* Parametre taille et marge de love */
-    width: 182px;
-    margin-left: px;
-}
-
-#button_dog>i,
-#button_dog>a {
-    /* Parametre taille et marge de dog */
-    width: 240px;
-    margin-left: px;
-}
-
-#button_money>i,
-#button_family>i,
-#button_love>i,
-#button_dog>i {
-    /* Parametre général de l'icone */
-    height: 50px;
-    width: 50px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50px;
-    color: #0065fc;
-    background-color: #deebff;
-}
-
-#button_money>a,
-#button_family>a,
-#button_love>a,
-#button_dog>a {
-    /* Parametre  générale de la boite a pour p */
-    height: 46px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    color: black;
+    border-radius: 35px;
     background-color: white;
-    border: 3px solid #f2f2f2;
-    border-radius: 30px;
+    box-shadow: 1px 1px 5px 2px #d9d9d9;
+}
+.boite_image {
+    /* Parametre boite image pour integrer l'image */
+    height: 114px;
+    width: 314px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-top: 5px;
+    border-radius: 30px 30px 0px 0px;
+}
+.hebergements>p{
+    margin-left: 20px;
+    margin-top: 56px;
 }
 
-#button_money>a>p,
-#button_family>a>p,
-#button_love>a>p,
-#button_dog>a>p {
-    /* Parametre du texte dans le bouitton */
-    margin-left: 63px;
+    /* *************************************** */
+    /* ******** Section 2 populaires ********* */
+    /* *************************************** */
+    .populaires{
+        width: 367px;
+        height: 580px;
+        margin-left: 0px;
+        border-radius: 0px;
+    }
+    .populaires>h2 {
+        /* Parametre .populaires titre*/
+        width: 100%;
+        margin-top: 38px;
+        margin-left: 20px;
+    }
+
+    span {
+        /* Parametre de l'icone */
+        margin-left: 22%;
+    }
+
+    #container_colonne {
+        /* parametre du container_colonne pour grille_image_2 */
+        width: 363px;
+        height: 510px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: px solid green;
+    }
+    #grille_image_2 {
+        /* Parametre de la boite pour recevoir les cartes */
+        height: 100%;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+    }
+    .carte-2{
+        width: 326px;
+        margin-top:9px;
+    }
+
+    /* *************************************** */
+/* ********* Section 3 activite ********** */
+/* *************************************** */
+
+/* ***** Activite ***** */
+#boite_invisible_section3 {
+    /* Parametre de la boite pour container-3 */
+    max-width: 767px;
+    height: auto;
+    margin-top: 42px;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: px solid black;
+}
+section>div>h2{
+    margin-left: 20px;
+    font-size: 20px;
+}
+.container-3 {
+    /* Parametre container-3 pour boite_carte*/
+    width: 323px;
+    height: 1282px;
+    margin: 32px auto 0px;
+    justify-content: center;
 }
 
-#button_money>a:hover,
-#button_family>a:hover,
-#button_love>a:hover,
-#button_dog>a:hover {
-    /* Animation des boutons */
-    color: blue;
-    border: 3px solid #deebff;
+.boite_carte, .boite_carte_portable {
+    /* Parametre boite_carte pour carte-3 */
+    width: 323px ;
+    height: 190px ;
 }
+
+/* ***** Cartes ***** */
+.carte-3,.carte_portable {
+    /* Parametre de la boite pour boite image */
+    height: 190px;
+    width: 100%;
+}
+.boite_image-3,.boite_image_portable {
+    /* Parametre boite image pour integrer l'image */
+    height: 134px;
+    width: 100%;
+}
+.boite_carte-2{
+    width: 100%;
+    height: 430px;
+    justify-content: space-between;
+    border: 2px solid black;
+}
+.carte-4a{
+    margin-bottom: 20px;
+}
+
+.carte-4,
+.carte-4a,
+.carte-4b,
+.carte-4c,
+.carte-4d {
+    /* Parametre des cartes */
+    width: 100%;
+    height: 190px;
+}
+.carte-4b{
+    margin-bottom: 0px;
+}
+.boite_image-4a,
+.boite_image-4b,
+.boite_image-4c,
+.boite_image-4d {
+    /* Parametre boite image pour integrer l'image */
+    width: 100%;
+    height: 134px;
+}
+.carte-4a p,
+.carte-4b p,
+.carte-4c p,
+.carte-4d p {
+    /* Parametre du texte */
+    margin-left: 20px;
+    margin-top: 18px;
+    color: #000000;
+    font-weight: bold;
+}
+
 
 
     /* *************************************** */
     /* *************** Footer **************** */
     /* *************************************** */
+
+    
+footer {
+    /* Parametrage du Footer */
+    height: 447px;
+    max-width: 767px;
+    margin-top: 30px;
+    background-color: #f2f2f2;
+}
+
+/* ***** Parametre boite pour les 3 sections ***** */
+
+    #boite_invisible_footer {
+        width: 100%;
+        height: 447px;
+        margin-left: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    #footer_about{
+        margin-top:12px
+    }
+    #footer_accommodation {
+        /* Marge à gauche */
+        margin-left: 0%;
+    }
+    
+    #footer_assistance {
+        /* Marge à gauche */
+        margin-left: 0%;
+    }
+    
+#boite_invisible_footer>section>h2 {
+    /* Parametre des titre de chaque section */
+    margin-top: 40px;
+}
+
+#boite_invisible_footer>section>ul {
+    /* Parametre des ul de chaque section */
+    margin-top: 23px;
+}
+
+
+
+
 
 
 }

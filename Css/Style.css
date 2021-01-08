@@ -12,7 +12,12 @@
 body {
     /* Définis paramétre du contenu suivant la taille de la maquette pc fourni */
     font-family: "Raleway", "Arial", "Verdana", "sans-serif";
+}
 
+
+.ecran_portable {
+    /* Pour cacher les élémentz d'un ecran pc */
+    visibility: collapse;
 }
 
 
@@ -28,59 +33,76 @@ header {
     margin-top: 42px;
 }
 
-/* ***** Parametre de la boite invisible pour logo et nav ***** */
+/* ***** Parametre de la boite invisible pour logo et les header ***** */
 #boite_invisible_header {
     max-width: 1340px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ***** Parametre du logo ***** */
+#logo {
+    margin-left: 6px;
+}
+
+/* ***** Parametre du header_haut pour accueillir le register ***** */
+#header_haut {
+    order: 3;
+    width: 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-/* ***** Parametre de l'icone ***** */
-#logo {
-    margin-left: 6px;
+#register {
+    /* Parametre de l'ul pour "s'inscrire" */
+    margin-left: 10%;
+    list-style: none;
 }
 
-/* ***** Paramètre du menu ***** */
-nav {
-    /*container qui vas recevoir ul */
-    width: 50%;
-    display: flex;
-    justify-content: right;
+.register {
+    /* mettre en gras le " s'inscrire" */
+    font-weight: bold;
+}
+
+/* ***** Parametre du header_bas ***** */
+#header_bas {
+    order: 2;
+    width: 80%;
 }
 
 #menu_navigation {
     /* paramétrage du container qui vas recevoir li */
-    width: 64%;
+    width: 30%;
+    margin-left: 70%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     list-style: none;
 }
 
-a {
-    /* enleve sur le soulignement et change la couleur */
-    text-decoration: none;
-    color: #0065FC;
+.li_un {
+    /* Change la marge du mot hebergements à droite */
+    margin-right: 22%;
 }
 
-.accommodation {
-    /* Marge à gauche */
-    margin-left: 15%
+.li_deux {
+    /* change la marge du mot activite à droite */
+    margin-right: 9%;
 }
 
 .activite {
-    /* change la couleur du mot activite et marge à gauche */
+    /* change la couleur du mot activite */
     color: black;
-    margin-left: 20px;
 }
 
-.register {
-    /* mettre en gras le dernier élément de li et marge à droite*/
-    font-weight: bold;
-    margin-right: 28px;
+a {
+    /* enleve sur le soulignement et change la couleur des liens*/
+    text-decoration: none;
+    color: #0065FC;
 }
-
 
 /* *************************************** */
 /* **************** Main ***************** */
@@ -90,13 +112,7 @@ a {
 
 main {
     /* Espace entre header et main */
-    margin-top: 23px;
-}
-
-/* Parametre de la boite invisible pour les sections*/
-#boite_invisible_main {
-    max-width: 1340px;
-    margin: 0 auto;
+    margin-top: 23pX;
 }
 
 
@@ -104,6 +120,12 @@ main {
 /* ************* Section 1 *************** */
 /* *************************************** */
 
+
+/* ***** Parametre de la boite invisible pour sections 1 ***** */
+#boite_invisible_section1 {
+    max-width: 1340px;
+    margin: 0 auto;
+}
 
 #entete {
     /* Décale sur la gauche le h2 et p */
@@ -187,6 +209,12 @@ input::placeholder {
 
 }
 
+.boite_button {
+    /* Parametre de la boite pour les boutons economiques et familial */
+    width: 370px;
+    display: flex;
+}
+
 .filtres>h2 {
     /* Parametre du h2 filtre */
     font-size: 18px;
@@ -205,30 +233,30 @@ input::placeholder {
 
 #button_money>i,
 #button_money>a {
-    /* Parametre taille et marge de money */
+    /* Parametre taille et marge pour icone et le a */
     width: 192px;
     margin-left: 25px;
 }
 
 #button_family>i,
 #button_family>a {
-    /* Parametre taille et marge de familial */
+    /* Parametre taille et marge pour icone et le a */
     width: 150px;
-    margin-left: 168px;
+    margin-left: 172px;
 }
 
 #button_love>i,
 #button_love>a {
-    /* Parametre taille et marge de love */
+    /* Parametre taille et marge pour icone et le a */
     width: 182px;
-    margin-left: 120px;
+    margin-left: 57px;
 }
 
 #button_dog>i,
 #button_dog>a {
-    /* Parametre taille et marge de dog */
+    /* Parametre taille et marge pour icone et le a */
     width: 240px;
-    margin-left: 158px;
+    margin-left: 163px;
 }
 
 #button_money>i,
@@ -252,14 +280,14 @@ input::placeholder {
 #button_family>a,
 #button_love>a,
 #button_dog>a {
-    /* Parametre  générale de la boite a pour p */
+    /* Parametre générale de la boite a pour p */
     height: 46px;
     position: absolute;
     display: flex;
     align-items: center;
     color: black;
     background-color: white;
-    border: 3px solid #f2f2f2;
+    border: 2px solid #f2f2f2;
     border-radius: 30px;
 }
 
@@ -267,7 +295,7 @@ input::placeholder {
 #button_family>a>p,
 #button_love>a>p,
 #button_dog>a>p {
-    /* Parametre du texte dans le bouitton */
+    /* Parametre du texte dans le boutton */
     margin-left: 63px;
 }
 
@@ -321,11 +349,13 @@ input::placeholder {
 /* ******* Section 2 hebergements ******** */
 /* *************************************** */
 
-/* ***** Hebergements ***** */
-#hebergements {
-    /* Parametre de la boite pour container_rangees et 2*/
-    width: 100%;
+
+/* ***** Parametre de la boite invisible pour section 2 ***** */
+#boite_invisible_section2 {
+    /* Parametre de la boite pour container_rangees */
+    max-width: 1340px;
     height: 625px;
+    margin: 0 auto;
     margin-top: 38px;
     display: flex;
     flex-wrap: wrap;
@@ -549,15 +579,15 @@ span {
 
 
 /* ***** Activite ***** */
-#activite {
+#boite_invisible_section3 {
     /* Parametre de la boite pour container-3 */
-    max-width: 100%;
+    max-width: 1340px;
     height: 530px;
+    margin: 0 auto;
     margin-top: 65px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .container-3 {
@@ -565,6 +595,7 @@ span {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .boite_carte {
@@ -720,7 +751,7 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
-    border: 1px solid red
+    border: px solid red
 }
 
 
