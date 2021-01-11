@@ -1,5 +1,5 @@
-/* Pour écrans supérieur a 1024px */
-@media all and (min-width: 1024px) {
+/* Pour écrans entre 960px et 1080px (Tablette en paysage, écran d’ordinateur de taille petite et moyenne) */
+@media all and (min-width: 960px) and (max-width: 1280px) {
 
     /* *************************************** */
     /* *************** General *************** */
@@ -11,21 +11,160 @@
     /* *************************************** */
 
 
+    /* ***** Parametre de la boite invisible pour logo et les header ***** */
+    #boite_invisible_header {
+        max-width: 1280px;
+    }
+
+    /* ***** Parametre du logo ***** */
+    #logo {
+        margin-left: 2%;
+    }
+
+    #header_haut {
+        margin-right: 3%;
+    }
+
+    /* *************************************** */
+    /* ************* Section 1 *************** */
+    /* *************************************** */
+
+
+    #boite_invisible_section1 {
+        max-width: 1280px;
+    }
+
+    #entete {
+        /* Décale sur la gauche le h2 et p */
+        margin-left: 1%;
+    }
+
+    /* ***** Filtres ***** */
+    .filtres {
+        /* Parametre de la boite pour h2 et les boutton filtres */
+        margin-left: 0px;
+
+    }
+
+    .filtres>h2 {
+        /* Parametre du h2 filtre */
+        margin-left: 1%;
+    }
+
+    /* *************************************** */
+    /* ******* Section 2 hebergements ******** */
+    /* *************************************** */
+
+
+    /* ***** Parametre de la boite invisible pour section 2 ***** */
+    #boite_invisible_section2 {
+        /* Parametre de la boite pour container_rangees */
+        max-width: 1280px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .hebergements {
+        /* Parametre .hebergements pour container_rangees*/
+        width: 100%;
+        height: 600px;
+        justify-content: flex-start;
+        background-color: white;
+    }
+
+    .hebergements>h2 {
+        /* Parametre réglage h2 */
+        margin-left: 1%;
+    }
+
+
+    /* *************************************** */
+    /* ******** Section 2 populaires ********* */
+    /* *************************************** */
+    /* ***** Populaires ***** */
+    .populaires {
+        /* Parametre .populaires pour container_colonne*/
+        width: 100%;
+        margin-left: 0px;
+        border-radius: 0px;
+        flex-wrap: nowrap;
+    }
+
+    .populaires>h2 {
+        /* Parametre .populaires titre*/
+        margin-left: 1%;
+    }
+
+    span {
+        /* Parametre de l'icone */
+        margin-left: 5%;
+    }
+
+    #container_colonne {
+        /* parametre du container_colonne pour grille_image_2 */
+        height: 370px;
+    }
+
+    #grille_image_2 {
+        /* Parametre de la boite pour recevoir les cartes */
+        width: 100%;
+        height: 100%;
+        margin-top: 3%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    /* *************************************** */
+    /* ********* Section 3 activite ********** */
+    /* *************************************** */
+
+    /* ***** Activite ***** */
+    #boite_invisible_section3 {
+        /* Parametre de la boite pour container-3 */
+        max-width: 1280px;
+        height: auto;
+        margin-top: 42px;
+    }
+
+    #boite_invisible_section3>div>h2 {
+        /* Marge à gauche pour le  h2*/
+        margin-left: 1%;
+    }
+
+    .container-3 {
+        /* Parametre container-3 pour boite_carte*/
+        width: 700px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
 
     /* *************************************** */
     /* *************** Footer **************** */
     /* *************************************** */
 
+    /* ***** Parametre boite pour les 3 sections ***** */
+    #boite_invisible_footer {
+        max-width: 1280px;
+        justify-content: space-around;
+    }
 
+    #footer_accommodation {
+        /* Marge à gauche */
+        margin-left: 0%;
+    }
+
+    #footer_assistance {
+        /* Marge à gauche */
+        margin-left: 0%;
+    }
 
 }
 
-/* Pour écrans entre 768px et 1023px (Tablette) */
-@media only screen and (min-width: 768px) and(min-width: 1023px) {
 
-    /* *************************************** */
-    /* *************** General *************** */
-    /* *************************************** */
+/* Pour écrans entre 480px et 959px (Portable en paysage, tablette en portrait et petite tablette en paysage) */
+@media only screen and (min-width: 480px) and (max-width: 959px) {
 
 
     /* *************************************** */
@@ -33,16 +172,293 @@
     /* *************************************** */
 
 
+    /* ***** Paramètre du header ***** */
+    header {
+        margin-top: 20px;
+    }
+
+    /* ***** Parametre de la boite invisible pour logo et les header ***** */
+    #boite_invisible_header {
+        max-width: 959px;
+        height: 96px;
+        flex-wrap: nowrap;
+    }
+
+    /* ***** Parametre du logo ***** */
+    #logo {
+        margin-left: 3%;
+    }
+
+    #header_haut {
+        margin-right: 8%;
+    }
+
+
+    /* *************************************** */
+    /* **************** Main ***************** */
+    /* *************************************** */
+
+
+    main {
+        /* Espace entre header et main */
+        margin-top: 0%;
+    }
+
+
+    /* *************************************** */
+    /* ************* Section 1 *************** */
+    /* *************************************** */
+
+
+    #boite_invisible_section1 {
+        max-width: 959px;
+    }
+
+    #entete {
+        /* Décale sur la gauche le h2 et p */
+        margin-left: 1%;
+    }
+
+    /* ***** Boite dialogue rechercher ***** */
+    #form_recherche {
+        /* Parametre boite pour la barre de recherche */
+        margin-left: 1%;
+    }
+
+    /* ***** Filtres ***** */
+    .filtres {
+        /* Parametre de la boite pour h2 et les boutton filtres */
+        width: 100%;
+        height: 245px;
+        margin-left: 0%;
+        font-size: 16px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+    }
+
+    .boite_button {
+        /* Parametre de la boite pour les boutons economiques et familial */
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .filtres>h2 {
+        /* Parametre du h2 filtre */
+        margin-left: 1%;
+    }
+
+    #button_money,
+    #button_love,
+    #button_dog {
+        /* Parametre de la boite pour l'icone et le a */
+        margin-left: 19px;
+    }
+
+    #button_money>i,
+    #button_money>a {
+        /* Parametre taille et marge pour icone et le a */
+        width: 172px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    #button_family {
+        /* Taille du cercle de l'icone */
+        width: 50px;
+        margin-right: 110px;
+    }
+
+    #button_family>i,
+    #button_family>a {
+        /* Parametre taille et marge pour icone et le a */
+        width: 135px;
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+
+    #button_love>i,
+    #button_love>a {
+        /* Parametre taille et marge pour icone et le a */
+        width: 169px;
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+
+    #button_dog>i,
+    #button_dog>a {
+        /* Parametre taille et marge pour icone et le a */
+        width: 220px;
+        margin-left: 0px;
+        margin-top: 13px;
+    }
+
+    #button_money>i,
+    #button_family>i,
+    #button_love>i,
+    #button_dog>i {
+        /* Parametre général de l'icone */
+        height: 50px;
+        width: 50px;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        color: #0065fc;
+        background-color: #deebff;
+    }
+
+    /* ***** La ligne info  ***** */
+    .boite_info {
+        /* Parametre de la boite du dernier article*/
+        margin-top: 0px;
+    }
+
+
+    /* *************************************** */
+    /* ******* Section 2 hebergements ******** */
+    /* *************************************** */
+
+
+    /* ***** Parametre de la boite invisible pour section 2 ***** */
+    #boite_invisible_section2 {
+        /* Parametre de la boite pour container_rangees */
+        max-width: 959px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .hebergements {
+        /* Parametre .hebergements pour container_rangees*/
+        width: 100%;
+        height: 600px;
+        justify-content: flex-start;
+        background-color: white;
+    }
+
+    .hebergements>h2 {
+        /* Parametre réglage h2 */
+        margin-left: 1%;
+    }
+
+    .container_rangees {
+        /* Parametre container_rangees pour .grille_image_1_premiere_range et #grille_image_1_deuxieme_range */
+        height: 450px;
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #grille_image_1_premiere_range,
+    #grille_image_1_deuxieme_range {
+        /* Paramétre grille_image_1 pour les cartes*/
+        flex-wrap: nowrap;
+    }
+
+
+    /* *************************************** */
+    /* ******** Section 2 populaires ********* */
+    /* *************************************** */
+
+
+    /* ***** Populaires ***** */
+    .populaires {
+        width: 100%;
+        height: 450px;
+        margin-left: 0px;
+        border-radius: 0px;
+        flex-wrap: nowrap;
+    }
+
+    .populaires>h2 {
+        /* Parametre .populaires titre*/
+        width: 100%;
+        margin-top: 38px;
+        margin-left: 1%;
+    }
+
+    span {
+        /* Parametre de l'icone */
+        margin-left: 10%;
+    }
+
+    #container_colonne {
+        /* parametre du container_colonne pour grille_image_2 */
+        height: 300px;
+        margin: 0 auto;
+    }
+
+    #grille_image_2 {
+        /* Parametre de la boite pour recevoir les cartes */
+        width: 710px;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .populaires>#container_colonne>#grille_image_2>article:last-child {
+        margin-top: 40px;
+    }
+
+
+    /* *************************************** */
+    /* ********* Section 3 activite ********** */
+    /* *************************************** */
+
+
+    /* ***** Activite ***** */
+    #boite_invisible_section3 {
+        /* Parametre de la boite pour container-3 */
+        max-width: 959px;
+        height: auto;
+        margin-top: 42px;
+    }
+
+    #boite_invisible_section3>div>h2 {
+        /* Marge à gauche pour le  h2*/
+        margin-left: 1%;
+    }
+
+    .container-3 {
+        /* Parametre container-3 pour boite_carte*/
+        justify-content: space-around;
+    }
+
+
     /* *************************************** */
     /* *************** Footer **************** */
     /* *************************************** */
 
 
+    /* ***** Parametre boite pour les 3 sections ***** */
+    #boite_invisible_footer {
+        max-width: 959px;
+        justify-content: space-around;
+    }
+
+    #footer_accommodation {
+        /* Marge à gauche */
+        margin-left: 0%;
+    }
+
+    #footer_assistance {
+        /* Marge à gauche */
+        margin-left: 0%;
+    }
+
 
 }
 
-/* Pour écrans inférieur à 767 px ( Portable ) */
-@media only screen and (max-width: 767px) {
+/* Pour écrans inférieur à 479 px ( Portable en portrait ) */
+@media only screen and (max-width: 479px) {
 
 
     /* *************************************** */
@@ -60,9 +476,11 @@
         visibility: visible;
     }
 
+
     /* *************************************** */
     /* *************** Header **************** */
     /* *************************************** */
+
 
     /* ***** Paramètre du header ***** */
     header {
@@ -71,9 +489,8 @@
 
     /* ***** Parametre de la boite invisible pour logo et les header ***** */
     #boite_invisible_header {
-        max-width: 767px;
+        max-width: 479px;
         height: 96px;
-        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -105,7 +522,6 @@
         width: 100%;
         margin-left: 0%;
         justify-content: space-around;
-        list-style: none;
     }
 
     .li_un {
@@ -139,12 +555,13 @@
         margin-left: 0%;
         display: inline-block;
         border-bottom: 3px solid #f2f2f2;
-
     }
+
 
     /* *************************************** */
     /* **************** Main ***************** */
     /* *************************************** */
+
 
     main {
         /* Espace entre header et main */
@@ -156,9 +573,10 @@
     /* ************* Section 1 *************** */
     /* *************************************** */
 
+
     /* ***** Parametre de la boite invisible pour sections 1 ***** */
     #boite_invisible_section1 {
-        max-width: 767px;
+        max-width: 479px;
         height: 539px;
         margin: 0 auto;
     }
@@ -186,9 +604,7 @@
 
     .boite_recherche {
         /* Parametre de la boite pour l'icone et recherche */
-        height: 51px;
         width: 325px;
-        background-color: #f2f2f2;
     }
 
     .boite_icone_2 {
@@ -211,7 +627,6 @@
     input {
         /* Parametre de l'input */
         width: 243px;
-        padding-left: 17px;
     }
 
     /* ***** Filtres ***** */
@@ -239,8 +654,6 @@
     }
 
     /* ***** Boutton Filtres ***** */
-
-
     #button_money,
     #button_love,
     #button_dog {
@@ -308,9 +721,7 @@
         /* Parametre de la boite du dernier article*/
         height: 41px;
         margin-top: 0px;
-        display: flex;
         justify-content: center;
-        align-items: center;
     }
 
     .info>i {
@@ -325,94 +736,83 @@
         font-size: 16px;
     }
 
+
     /* *************************************** */
     /* ******* Section 2 hebergements ******** */
     /* *************************************** */
 
 
     /* ***** Parametre de la boite invisible pour section 2 ***** */
-#boite_invisible_section2 {
-    /* Parametre de la boite pour container_rangees */
-    max-width: 767px;
-    height: auto;
-    margin-top:0px;
-    justify-content: flex-start;
-    flex-direction: column-reverse;
-    border: px solid black;
-}
+    #boite_invisible_section2 {
+        /* Parametre de la boite pour container_rangees */
+        max-width: 479px;
+        height: auto;
+        margin-top: 0px;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
 
-.hebergements{
-    width: 367px;
-    height: 1410px;
-    justify-content: flex-start;
-    background-color:white;
-    border: px solid blue;
-}
+    .hebergements {
+        width: 100%;
+        height: 1410px;
+        justify-content: flex-start;
+        background-color: white;
+    }
 
-.hebergements>h2 {
-    /* Parametre réglage h2 */
-    margin-top: 35px;
-    margin-left: 20px;
-    font-size: 20px;
-}
+    .hebergements>h2 {
+        /* Parametre réglage h2 */
+        margin-top: 35px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
 
-.container_rangees {
-    /* Parametre container_rangees pour .grille_image_1_premiere_range et #grille_image_1_deuxieme_range */
-    height: 1255px;
-    margin: 0 auto;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+    .container_rangees {
+        /* Parametre container_rangees pour .grille_image_1_premiere_range et #grille_image_1_deuxieme_range */
+        height: 1255px;
+        margin: 0 auto;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
 
-#grille_image_1_premiere_range,
-#grille_image_1_deuxieme_range {
-    /* Paramétre grille_image_1 pour les cartes*/
-    
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-}
-/* ***** Cartes ***** */
-.carte {
-    /*Parametre de la boite carte */
-    height: 200px;
-    width: 323px;
-    margin-top: 12px;
-    margin: 12px auto 0px;
-    display: flex;
-    justify-content: center;
-    border-radius: 35px;
-    background-color: white;
-    box-shadow: 1px 1px 5px 2px #d9d9d9;
-}
-.boite_image {
-    /* Parametre boite image pour integrer l'image */
-    height: 114px;
-    width: 314px;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    margin-top: 5px;
-    border-radius: 30px 30px 0px 0px;
-}
-.hebergements>p{
-    margin-left: 20px;
-    margin-top: 56px;
-}
+    #grille_image_1_premiere_range,
+    #grille_image_1_deuxieme_range {
+        /* Paramétre grille_image_1 pour les cartes*/
+        align-items: center;
+        align-content: center;
+    }
+
+    /* ***** Cartes ***** */
+    .carte {
+        /*Parametre de la boite carte */
+        width: 323px;
+        margin-top: 12px;
+        margin: 12px auto 0px;
+    }
+
+    .boite_image {
+        /* Parametre boite image pour integrer l'image */
+        width: 314px;
+    }
+
+    .hebergements>p {
+        margin-left: 20px;
+        margin-top: 56px;
+    }
+
 
     /* *************************************** */
     /* ******** Section 2 populaires ********* */
     /* *************************************** */
-    .populaires{
-        width: 367px;
+
+
+    /* ***** Populaires ***** */
+    .populaires {
+        width: 100%;
         height: 580px;
         margin-left: 0px;
         border-radius: 0px;
     }
+
     .populaires>h2 {
         /* Parametre .populaires titre*/
         width: 100%;
@@ -422,136 +822,143 @@
 
     span {
         /* Parametre de l'icone */
-        margin-left: 22%;
+        margin-left: 31%;
     }
 
     #container_colonne {
         /* parametre du container_colonne pour grille_image_2 */
-        width: 363px;
-        height: 510px;
+        width: 100%;
         margin-left: 0px;
         margin-right: 0px;
-        display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: px solid green;
     }
+
     #grille_image_2 {
         /* Parametre de la boite pour recevoir les cartes */
-        height: 100%;
         margin-top: 15px;
-        display: flex;
-        flex-direction: column;
         justify-content: flex-start;
-        flex-wrap: nowrap;
     }
-    .carte-2{
+
+    /* ***** Cartes ***** */
+    .carte-2 {
         width: 326px;
-        margin-top:9px;
+        margin-top: 9px;
     }
+
 
     /* *************************************** */
-/* ********* Section 3 activite ********** */
-/* *************************************** */
+    /* ********* Section 3 activite ********** */
+    /* *************************************** */
 
-/* ***** Activite ***** */
-#boite_invisible_section3 {
-    /* Parametre de la boite pour container-3 */
-    max-width: 767px;
-    height: auto;
-    margin-top: 42px;
-    justify-content: flex-start;
-    flex-direction: column;
-    border: px solid black;
-}
-section>div>h2{
-    margin-left: 20px;
-    font-size: 20px;
-}
-.container-3 {
-    /* Parametre container-3 pour boite_carte*/
-    width: 323px;
-    height: 1282px;
-    margin: 32px auto 0px;
-    justify-content: center;
-}
 
-.boite_carte, .boite_carte_portable {
-    /* Parametre boite_carte pour carte-3 */
-    width: 323px ;
-    height: 190px ;
-}
+    /* ***** Activite ***** */
+    #boite_invisible_section3 {
+        /* Parametre de la boite pour container-3 */
+        max-width: 479px;
+        height: auto;
+        margin-top: 42px;
+        justify-content: flex-start;
+    }
 
-/* ***** Cartes ***** */
-.carte-3,.carte_portable {
-    /* Parametre de la boite pour boite image */
-    height: 190px;
-    width: 100%;
-}
-.boite_image-3,.boite_image_portable {
-    /* Parametre boite image pour integrer l'image */
-    height: 134px;
-    width: 100%;
-}
-.boite_carte-2{
-    width: 100%;
-    height: 430px;
-    justify-content: space-between;
-    border: 2px solid black;
-}
-.carte-4a{
-    margin-bottom: 20px;
-}
+    section>div>h2 {
+        margin-left: 20px;
+        font-size: 20px;
+    }
 
-.carte-4,
-.carte-4a,
-.carte-4b,
-.carte-4c,
-.carte-4d {
-    /* Parametre des cartes */
-    width: 100%;
-    height: 190px;
-}
-.carte-4b{
-    margin-bottom: 0px;
-}
-.boite_image-4a,
-.boite_image-4b,
-.boite_image-4c,
-.boite_image-4d {
-    /* Parametre boite image pour integrer l'image */
-    width: 100%;
-    height: 134px;
-}
-.carte-4a p,
-.carte-4b p,
-.carte-4c p,
-.carte-4d p {
-    /* Parametre du texte */
-    margin-left: 20px;
-    margin-top: 18px;
-    color: #000000;
-    font-weight: bold;
-}
+    .container-3 {
+        /* Parametre container-3 pour boite_carte*/
+        width: 323px;
+        height: 1282px;
+        margin: 20px auto 0px;
+    }
 
+    .boite_carte,
+    .boite_carte_portable {
+        /* Parametre boite_carte pour carte-3 */
+        width: 323px;
+        height: 190px;
+    }
+
+    /* ***** Cartes ***** */
+    .carte-3,
+    .carte_portable {
+        /* Parametre de la boite pour boite image */
+        height: 190px;
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .boite_image-3,
+    .boite_image_portable {
+        /* Parametre boite image pour integrer l'image */
+        height: 134px;
+        width: 100%;
+    }
+
+    .boite_carte-2 {
+        /* Parametre boite_carte pour carte-4 */
+        width: 100%;
+        height: 420px;
+        margin-top: 43px;
+        justify-content: flex-start;
+    }
+
+    .carte-4,
+    .carte-4a,
+    .carte-4b,
+    .carte-4c,
+    .carte-4d {
+        /* Parametre des cartes */
+        width: 100%;
+        height: 190px;
+    }
+
+    /* Changements des marges */
+    .carte-4a {
+        margin-top: 0px;
+        margin-bottom: 26px;
+    }
+
+    .carte-4b {
+        margin-top: 1px;
+        margin-bottom: 0px;
+    }
+
+    .carte-4c {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .carte-4d {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .boite_image-4a,
+    .boite_image-4b,
+    .boite_image-4c,
+    .boite_image-4d {
+        /* Parametre boite image pour integrer l'image */
+        width: 100%;
+        height: 134px;
+    }
 
 
     /* *************************************** */
     /* *************** Footer **************** */
     /* *************************************** */
 
-    
-footer {
-    /* Parametrage du Footer */
-    height: 447px;
-    max-width: 767px;
-    margin-top: 30px;
-    background-color: #f2f2f2;
-}
 
-/* ***** Parametre boite pour les 3 sections ***** */
+    footer {
+        /* Parametrage du Footer */
+        height: 447px;
+        max-width: 479px;
+    }
 
+    /* ***** Parametre boite pour les 3 sections ***** */
     #boite_invisible_footer {
         width: 100%;
         height: 447px;
@@ -560,32 +967,31 @@ footer {
         align-items: flex-start;
         flex-wrap: wrap;
     }
-    #footer_about{
-        margin-top:12px
+
+    #footer_about {
+        /* Marge en haut */
+        margin-top: 12px
     }
+
     #footer_accommodation {
         /* Marge à gauche */
         margin-left: 0%;
     }
-    
+
     #footer_assistance {
         /* Marge à gauche */
         margin-left: 0%;
     }
-    
-#boite_invisible_footer>section>h2 {
-    /* Parametre des titre de chaque section */
-    margin-top: 40px;
-}
 
-#boite_invisible_footer>section>ul {
-    /* Parametre des ul de chaque section */
-    margin-top: 23px;
-}
+    #boite_invisible_footer>section>h2 {
+        /* Parametre des titre de chaque section */
+        margin-top: 40px;
+    }
 
-
-
-
+    #boite_invisible_footer>section>ul {
+        /* Parametre des ul de chaque section */
+        margin-top: 23px;
+    }
 
 
 }

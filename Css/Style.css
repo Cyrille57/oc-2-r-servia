@@ -21,6 +21,7 @@ body {
 }
 
 
+
 /* *************************************** */
 /* *************** Header **************** */
 /* *************************************** */
@@ -38,7 +39,6 @@ header {
     max-width: 1340px;
     margin: 0 auto;
     display: flex;
-    flex-direction: ;
     justify-content: space-between;
     align-items: center;
 }
@@ -287,7 +287,7 @@ input::placeholder {
     align-items: center;
     color: black;
     background-color: white;
-    border: 2px solid #f2f2f2;
+    border: 3px solid #f2f2f2;
     border-radius: 30px;
 }
 
@@ -358,7 +358,7 @@ input::placeholder {
     margin: 0 auto;
     margin-top: 38px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .hebergements {
@@ -665,6 +665,7 @@ span {
     box-shadow: 1px 1px 5px 2px #d9d9d9;
 }
 
+/* Changements des marges et hauteur */
 .carte-4 {
     height: 195px;
 }
@@ -751,7 +752,6 @@ footer {
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
-    border: px solid red
 }
 
 
