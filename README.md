@@ -1,4 +1,4 @@
-# Projet OpenClassrooms / P2 Réservia
+# 📢 Projet OpenClassrooms / P2 Réservia
 
 <p> 
   Dans le cadre de ma formation développeur web avec OpenClassrooms, différents projets sont à realiser.
@@ -16,7 +16,7 @@ est d'effectuer une intégration de maquette en responsive, le tout en Html et C
   Pour ce faire les maquettes, photo, logo et consigne me sont fournies.
 </p>
 
-<h2> Les consignes / fonctionnalités: </h2>
+<h2>📝 Les consignes / fonctionnalités: </h2>
 
 <ul>
   <li>
@@ -54,10 +54,36 @@ est d'effectuer une intégration de maquette en responsive, le tout en Html et C
   </li>
 </ul>
 
-<h2> Rendue </h2>
+<h2>👀 Rendue </h2>
 
 <p>
   Pour voir le livrable et le tester, c'est par <a href="https://cyrille57.github.io/CyrilleMorel_2_15122020/">ici</a>
 </p>
-<h2> Contact </h2>
-<p> Vous pouvez me contacter sur <a href="https://discord.gg/At8T9HD">discord</a>, <a href="https://twitter.com/Cyril2101">twitter</a> et <a href="mailto:cyril_dev@outlook.fr">mail</a>
+
+<h2>🙋‍♂️ À propos: </h2>
+
+<ul>
+  <li>
+    <a href="https://www.linkedin.com/in/cyrille-morel/">Linkedin</a>
+  </li>
+</ul> 
+
+
+<h2>📫 Contact: </h2>
+
+<ul>
+  <li>
+    <a href="mailto:cyril_dev@outlook.fr">Mail</a>
+  </li>
+</ul>
+
+ <h2>🌐 Réseaux sociaux:</h2>
+ 
+<ul>
+  <li>
+    <a href="https://discord.gg/At8T9HD">Discord</a>
+  </li>
+  <li>
+    <a href="https://twitter.com/Cyril2101">Twitter</a>
+  </li>
+</ul>
