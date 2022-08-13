@@ -41,7 +41,7 @@ est d'effectuer une intégration de maquette en responsive, le tout en Html et C
     Le site devra également être adapté aux tablettes. Sur ce support, je suis libre de faire les adaptations nécessaires avec la mise en page, tant qu’aucun élément n’est coupé et que le texte a une taille suffisante.
   </li>
   <li>
-    Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C <a href="https://validator.w3.org/nu/?useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fcyrille57.github.io%2Foc-2-r-servia%2F">HTML</a> et <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcyrille57.github.io%2Foc-2-r-servia%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr">CSS</a>.
+    Le code devra utiliser les balises sémantiques et ne doit contenir aucune erreur ni alerte au validateur W3C <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcyrille57.github.io%2Foc-2-reservia%2F">HTML</a> et <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcyrille57.github.io%2Foc-2-reservia%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=fr">CSS</a>.
   </li>
   <li>
     Le site doit être parfaitement compatible avec les dernières versions desktop deChrome et Firefox.
@@ -57,7 +57,7 @@ est d'effectuer une intégration de maquette en responsive, le tout en Html et C
 <h2>👀 Rendue </h2>
 
 <p>
-  Pour voir le livrable et le tester, c'est par <a href="https://cyrille57.github.io/oc-2-r-servia/">ici</a>
+  Pour voir le livrable et le tester, c'est par <a href="https://cyrille57.github.io/oc-2-reservia/">ici</a>
 </p>
 
 <h2>🙋‍♂️ À propos: </h2>
