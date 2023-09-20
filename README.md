@@ -54,7 +54,7 @@ est d'effectuer une intégration de maquette en responsive, le tout en Html et C
   </li>
 </ul>
 
-<h2>👀 Rendu </h2>
+<h2>👀 Rendu : </h2>
 
 <p>
   Pour voir le livrable et le tester, c'est par <a href="https://cyrille57.github.io/oc-2-reservia/">ici</a>
